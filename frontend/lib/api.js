@@ -6,7 +6,7 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
-// Request interceptor: attach JWT from localStorage
+// Attach JWT
 api.interceptors.request.use(
   (config) => {
     if (typeof window !== 'undefined') {
@@ -18,14 +18,13 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Response interceptor: handle 401 globally
+// Handle 401 globally
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401 && typeof window !== 'undefined') {
       localStorage.removeItem('dh_token');
       localStorage.removeItem('dh_user');
-      // Redirect to login only if not already there
       if (!window.location.pathname.startsWith('/auth')) {
         window.location.href = '/auth/login';
       }
@@ -34,26 +33,29 @@ api.interceptors.response.use(
   }
 );
 
+// ── Auth ──
 export const authAPI = {
-  register: (data) => api.post('/auth/register', data),
-  login: (data) => api.post('/auth/login', data),
-  googleAuth: (credential) => api.post('/auth/google', { credential }),
-  getMe: () => api.get('/auth/me'),
-  updateProfile: (data) => api.put('/auth/update-profile', data),
-  changePassword: (data) => api.put('/auth/change-password', data),
+  register:         (data)     => api.post('/auth/register', data),
+  login:            (data)     => api.post('/auth/login', data),
+  googleAuth:       (credential) => api.post('/auth/google', { credential }),
+  getMe:            ()         => api.get('/auth/me'),
+  updateProfile:    (data)     => api.put('/auth/update-profile', data),
+  changePassword:   (data)     => api.put('/auth/change-password', data),
   getPublicProfile: (username) => api.get(`/auth/profile/${username}`),
 };
 
+// ── Debates ──
 export const debateAPI = {
-  create:        (data)          => api.post('/debates', data),
-  getAll:        (params)        => api.get('/debates', { params }),
-  getOne:        (id)            => api.get(`/debates/${id}`),
-  update:        (id, data)      => api.put(`/debates/${id}`, data),
-  remove:        (id)            => api.delete(`/debates/${id}`),
-  getTrending:   ()              => api.get('/debates/trending'),
-  getCategories: ()              => api.get('/debates/categories'),
+  create:         (data)   => api.post('/debates', data),
+  getAll:         (params) => api.get('/debates', { params }),
+  getOne:         (id)     => api.get(`/debates/${id}`),
+  update:         (id, data) => api.put(`/debates/${id}`, data),
+  remove:         (id)     => api.delete(`/debates/${id}`),
+  getTrending:    ()       => api.get('/debates/trending'),
+  getCategories:  ()       => api.get('/debates/categories'),
 };
 
+// ── Arguments ──
 export const argumentAPI = {
   create:     (debateId, data)   => api.post(`/debates/${debateId}/arguments`, data),
   getAll:     (debateId, params) => api.get(`/debates/${debateId}/arguments`, { params }),
@@ -63,5 +65,42 @@ export const argumentAPI = {
   remove:     (id)               => api.delete(`/arguments/${id}`),
 };
 
-export default api;
+// ── Users ──
+export const userAPI = {
+  getProfile:     (username) => api.get(`/users/${username}`),
+  getUserDebates: (username) => api.get(`/users/${username}/debates`),
+  getLeaderboard: (params)   => api.get('/users/leaderboard', { params }),
+  followCategory: (category) => api.put('/users/follow-category', { category }),
+  toggleBookmark: (debateId) => api.put(`/users/bookmark/${debateId}`),
+  getBookmarks:   ()         => api.get('/users/bookmarks'),
+};
 
+// ── Notifications ──
+export const notificationAPI = {
+  getAll:         (params) => api.get('/notifications', { params }),
+  getUnreadCount: ()       => api.get('/notifications/unread-count'),
+  markAllRead:    ()       => api.put('/notifications/read-all'),
+  markOneRead:    (id)     => api.put(`/notifications/${id}/read`),
+  clearAll:       ()       => api.delete('/notifications'),
+};
+
+// ── Search ──
+export const searchAPI = {
+  search:         (params) => api.get('/search', { params }),
+  getSuggestions: (q)      => api.get('/search/suggestions', { params: { q } }),
+};
+
+// ── AI ──
+export const aiAPI = {
+  summarize:      (debateId) => api.post(`/ai/summarize/${debateId}`),
+  generateTopics: (category) => api.post('/ai/generate-topics', { category }),
+};
+
+// ── Admin ──
+export const adminAPI = {
+  getUsers:       (params)   => api.get('/admin/users', { params }),
+  banUser:        (id)       => api.put(`/admin/users/${id}/ban`),
+  getAnalytics:   ()         => api.get('/admin/analytics'),
+};
+
+export default api;

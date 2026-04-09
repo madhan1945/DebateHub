@@ -1,6 +1,26 @@
 'use client';
+import { useState, useEffect } from 'react';
+
+const ALL_QUOTES = [
+  { quote: 'The best platform I\'ve found for actually changing your mind on something.', name: 'Priya K.', role: 'Philosophy student' },
+  { quote: 'I learned more from one good debate here than a semester of lectures.', name: 'Marcus T.', role: 'Law grad student' },
+  { quote: 'This app finally makes looking at different perspectives satisfying.', name: 'Sarah M.', role: 'Product Manager' },
+  { quote: 'The toxicity filters are brilliant. Real debate, zero trolling.', name: 'James L.', role: 'Journalist' },
+  { quote: 'It is almost like playing a competitive sport, but for your brain.', name: 'Derek W.', role: 'Economist' },
+  { quote: 'The reputation system makes sure the best arguments bubble to the top immediately.', name: 'Anita R.', role: 'Political Analyst' },
+];
 
 export default function AuthLayout({ children }) {
+  const [randomQuotes, setRandomQuotes] = useState([]);
+
+  useEffect(() => {
+    // Pick 2 random quotes
+    const shuffled = [...ALL_QUOTES].sort(() => 0.5 - Math.random());
+    setRandomQuotes(shuffled.slice(0, 2));
+  }, []);
+
+  if (!randomQuotes.length) return null; // Avoid hydration mismatch
+
   return (
     <div
       style={{
@@ -55,11 +75,8 @@ export default function AuthLayout({ children }) {
           </p>
 
           {/* Social proof testimonials */}
-          {[
-            { quote: 'The best platform I\'ve found for actually changing your mind on something.', name: 'Priya K.', role: 'Philosophy student' },
-            { quote: 'I learned more from one good debate here than a semester of lectures.', name: 'Marcus T.', role: 'Law grad student' },
-          ].map(({ quote, name, role }) => (
-            <div key={name} style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.25rem', marginBottom: '1rem' }}>
+          {randomQuotes.map(({ quote, name, role }) => (
+            <div key={name} style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.25rem', marginBottom: '1rem', transition: 'all 0.3s ease-in' }}>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', lineHeight: 1.6, marginBottom: '0.75rem' }}>
                 "{quote}"
               </p>

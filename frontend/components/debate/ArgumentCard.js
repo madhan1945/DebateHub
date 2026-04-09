@@ -22,6 +22,15 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
     if (isClosed) return toast.error('Debate is closed.');
     if (voting)  return;
 
+    // Haptic Feedback Setting
+    if (user.settings?.hapticFeedback && typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate([100, 50, 100]);
+    }
+    // Incognito Voting Logic Visuals
+    if (user.settings?.incognitoVote) {
+      toast.success('Vote cast invisibly', { icon: '🕵️' });
+    }
+
     setVoting(true);
     try {
       const { data } = await argumentAPI.vote(arg._id, voteType);
@@ -56,8 +65,18 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
   const indentPx  = arg.depth * 20;
 
   return (
-    <div style={{ marginLeft: indentPx, borderLeft: arg.depth > 0 ? `2px solid var(--border)` : 'none', paddingLeft: arg.depth > 0 ? '1rem' : 0 }}>
+    <div 
+      className="animate-fade-in" 
+      style={{ 
+        marginLeft: indentPx, 
+        borderLeft: arg.depth > 0 ? `2px solid var(--border)` : 'none', 
+        paddingLeft: arg.depth > 0 ? '1rem' : 0,
+        animationDelay: `${arg.depth * 0.1}s`,
+        animationFillMode: 'both' // Ensures it stays invisible before the delay
+      }}
+    >
       <div
+        className="argument-panel"
         style={{
           background: 'var(--bg-surface)',
           border: '1px solid var(--border)',
@@ -65,13 +84,22 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
           borderRadius: 'var(--radius-md)',
           padding: '1.125rem',
           marginBottom: '0.75rem',
+          transition: 'all 0.2s ease',
+        }}
+        onMouseEnter={e => {
+          e.currentTarget.style.transform = 'translateX(2px)';
+          e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.transform = 'translateX(0)';
+          e.currentTarget.style.boxShadow = 'none';
         }}
       >
         {/* Author row */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <img
-              src={arg.author?.avatar || `https://ui-avatars.com/api/?name=${arg.author?.username}&background=5667f0&color=fff&size=32&bold=true`}
+              src={arg.author?.avatar || `https://ui-avatars.com/api/?name=${arg.author?.username}&background=random&length=1&color=fff&size=32&bold=true`}
               alt={arg.author?.username}
               style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
             />
@@ -90,8 +118,13 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
         {/* Content */}
         {arg.isDeleted ? (
           <p style={{ color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '0.9rem' }}>[deleted]</p>
+        ) : arg.isFlagged && !user?.settings?.hardcoreToxicity ? (
+          <div style={{ padding: '1rem', background: 'var(--bg-elevated)', borderRadius: 8, border: '1px dashed var(--accent)', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+             🛡️ This argument was flagged by safety protocols.<br/>(Turn on <b>Ruthless Toxicity Mode</b> in Settings to view).
+          </div>
         ) : (
-          <p style={{ color: 'var(--text-primary)', fontSize: '0.9375rem', lineHeight: 1.65, marginBottom: '0.75rem', whiteSpace: 'pre-wrap' }}>
+          <p style={{ color: arg.isFlagged ? 'var(--accent)' : 'var(--text-primary)', fontSize: '0.9375rem', lineHeight: 1.65, marginBottom: '0.75rem', whiteSpace: 'pre-wrap' }}>
+            {arg.isFlagged && <span style={{ fontWeight: 'bold', display: 'block', marginBottom: '0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>[⚠️ TOXIC WARNING FLAG BYPASSED]</span>}
             {arg.content}
           </p>
         )}
@@ -112,6 +145,7 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
           {/* Upvote */}
           <button
+            className="vote-btn"
             onClick={() => handleVote('upvote')}
             disabled={voting || isOwn || isClosed}
             style={{
@@ -122,14 +156,17 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
               color: myVote === 'upvote' ? 'var(--accent-green)' : 'var(--text-secondary)',
               fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer',
               opacity: (isOwn || isClosed) ? 0.4 : 1,
-              transition: 'all 0.15s',
+              transition: 'all 0.15s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
+            onMouseEnter={e => !e.currentTarget.disabled && (e.currentTarget.style.transform = 'scale(1.05)')}
+            onMouseLeave={e => !e.currentTarget.disabled && (e.currentTarget.style.transform = 'scale(1)')}
           >
             ▲ {arg.upvotes || 0}
           </button>
 
           {/* Downvote */}
           <button
+            className="vote-btn"
             onClick={() => handleVote('downvote')}
             disabled={voting || isOwn || isClosed}
             style={{
@@ -140,8 +177,10 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
               color: myVote === 'downvote' ? 'var(--accent)' : 'var(--text-secondary)',
               fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer',
               opacity: (isOwn || isClosed) ? 0.4 : 1,
-              transition: 'all 0.15s',
+              transition: 'all 0.15s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
+            onMouseEnter={e => !e.currentTarget.disabled && (e.currentTarget.style.transform = 'scale(1.05)')}
+            onMouseLeave={e => !e.currentTarget.disabled && (e.currentTarget.style.transform = 'scale(1)')}
           >
             ▼ {arg.downvotes || 0}
           </button>

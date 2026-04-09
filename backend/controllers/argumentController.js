@@ -3,6 +3,7 @@ const Debate   = require('../models/Debate');
 const Vote     = require('../models/Vote');
 const User     = require('../models/User');
 const { wilsonScore } = require('../utils/ranking');
+const { checkToxicity } = require('../utils/claude');
 
 // @route  POST /api/debates/:debateId/arguments
 // @access Private
@@ -16,6 +17,14 @@ const createArgument = async (req, res, next) => {
 
     if (!content || !side) return res.status(400).json({ success: false, message: 'content and side are required.' });
     if (!['support', 'oppose'].includes(side)) return res.status(400).json({ success: false, message: 'side must be "support" or "oppose".' });
+
+    let isFlagged = false;
+    let flagReason = '';
+    const toxicity = await checkToxicity(content);
+    if (toxicity.isToxic) {
+      isFlagged = true;
+      flagReason = toxicity.reason || 'Violation of community guidelines.';
+    }
 
     let depth = 0;
     if (parentArgumentId) {
@@ -35,6 +44,8 @@ const createArgument = async (req, res, next) => {
       images: Array.isArray(images) ? images.slice(0, 3) : [],
       parentArgument: parentArgumentId || null,
       depth,
+      isFlagged,
+      flagReason,
     });
 
     // Update debate counters

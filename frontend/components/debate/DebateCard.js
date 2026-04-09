@@ -26,27 +26,19 @@ export default function DebateCard({ debate }) {
   return (
     <Link href={`/debates/${debate._id}`} style={{ textDecoration: 'none', display: 'block' }}>
       <article
+        className="card-hover-lift animate-fade-in"
         style={{
           background: 'var(--bg-surface)',
           border: '1px solid var(--border)',
           borderRadius: 'var(--radius-lg)',
           padding: '1.375rem',
-          transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
           cursor: 'pointer',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
           gap: '1rem',
-        }}
-        onMouseEnter={e => {
-          e.currentTarget.style.transform    = 'translateY(-3px)';
-          e.currentTarget.style.boxShadow    = 'var(--shadow-md)';
-          e.currentTarget.style.borderColor  = 'var(--border-strong)';
-        }}
-        onMouseLeave={e => {
-          e.currentTarget.style.transform    = 'translateY(0)';
-          e.currentTarget.style.boxShadow    = 'none';
-          e.currentTarget.style.borderColor  = 'var(--border)';
+          position: 'relative',
+          overflow: 'hidden'
         }}
       >
         {/* Top row */}
@@ -96,7 +88,7 @@ export default function DebateCard({ debate }) {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
             <img
-              src={debate.creator?.avatar || `https://ui-avatars.com/api/?name=${debate.creator?.username}&background=5667f0&color=fff&size=24&bold=true`}
+              src={debate.creator?.avatar || `https://ui-avatars.com/api/?name=${debate.creator?.username}&background=random&length=1&color=fff&size=24&bold=true`}
               alt={debate.creator?.username}
               style={{ width: 20, height: 20, borderRadius: '50%', objectFit: 'cover' }}
             />

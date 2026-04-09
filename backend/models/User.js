@@ -39,6 +39,24 @@ const userSchema = new mongoose.Schema(
       maxlength: [300, 'Bio cannot exceed 300 characters'],
       default: '',
     },
+    philosophicalStance: {
+      type: String,
+      maxlength: [50, 'Stance cannot exceed 50 characters'],
+      default: 'Neutral',
+    },
+    socialLinks: {
+      twitter: { type: String, default: '' },
+      github: { type: String, default: '' },
+      website: { type: String, default: '' },
+      instagram: { type: String, default: '' },
+      discord: { type: String, default: '' },
+    },
+    settings: {
+      autoDestruct: { type: Boolean, default: false },
+      hardcoreToxicity: { type: Boolean, default: false },
+      incognitoVote: { type: Boolean, default: false },
+      hapticFeedback: { type: Boolean, default: true }
+    },
     role: {
       type: String,
       enum: ['user', 'admin'],
@@ -102,7 +120,7 @@ userSchema.methods.comparePassword = async function (candidatePassword) {
 // Instance method: generate avatar fallback URL
 userSchema.methods.getAvatarUrl = function () {
   if (this.avatar) return this.avatar;
-  return `https://ui-avatars.com/api/?name=${encodeURIComponent(this.username)}&background=6366f1&color=fff&bold=true`;
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(this.username)}&background=random&length=1&color=fff&bold=true`;
 };
 
 // Remove sensitive fields from JSON output

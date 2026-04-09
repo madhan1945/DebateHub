@@ -1,5 +1,6 @@
 const Debate = require('../models/Debate');
 const User   = require('../models/User');
+const { checkToxicity } = require('../utils/claude');
 
 const VALID_SORTS = ['newest', 'popular', 'trending', 'closing_soon'];
 
@@ -16,6 +17,11 @@ const createDebate = async (req, res, next) => {
     const hours = parseFloat(durationHours);
     if (isNaN(hours) || hours < 1 || hours > 720) {
       return res.status(400).json({ success: false, message: 'durationHours must be between 1 and 720 (30 days).' });
+    }
+
+    const toxicity = await checkToxicity(`${title}\n${description}`);
+    if (toxicity.isToxic) {
+      return res.status(400).json({ success: false, message: `Debate flagged for toxicity: ${toxicity.reason || 'Violation of community guidelines.'}`});
     }
 
     const endTime = new Date(Date.now() + hours * 60 * 60 * 1000);

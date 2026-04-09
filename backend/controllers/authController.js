@@ -131,23 +131,41 @@ const getMe = async (req, res, next) => {
 // @access  Private
 const updateProfile = async (req, res, next) => {
   try {
-    const { username, bio, avatar } = req.body;
-    const updates = {};
+    const { username, bio, avatar, philosophicalStance, socialLinks, settings } = req.body;
+    
+    const user = await User.findById(req.user._id);
 
     if (username) {
       const existing = await User.findOne({ username, _id: { $ne: req.user._id } });
       if (existing) {
         return res.status(409).json({ success: false, message: 'Username already taken.' });
       }
-      updates.username = username;
+      user.username = username;
     }
-    if (bio !== undefined) updates.bio = bio;
-    if (avatar !== undefined) updates.avatar = avatar;
+    if (bio !== undefined) user.bio = bio;
+    if (avatar !== undefined) user.avatar = avatar;
+    if (philosophicalStance !== undefined) user.philosophicalStance = philosophicalStance;
+    
+    if (socialLinks !== undefined) {
+      if (!user.socialLinks) user.socialLinks = {};
+      if (socialLinks.twitter !== undefined) user.socialLinks.twitter = socialLinks.twitter;
+      if (socialLinks.github !== undefined) user.socialLinks.github = socialLinks.github;
+      if (socialLinks.website !== undefined) user.socialLinks.website = socialLinks.website;
+      if (socialLinks.instagram !== undefined) user.socialLinks.instagram = socialLinks.instagram;
+      if (socialLinks.discord !== undefined) user.socialLinks.discord = socialLinks.discord;
+      user.markModified('socialLinks');
+    }
 
-    const user = await User.findByIdAndUpdate(req.user._id, updates, {
-      new: true,
-      runValidators: true,
-    });
+    if (settings !== undefined) {
+      if (!user.settings) user.settings = {};
+      if (settings.autoDestruct !== undefined) user.settings.autoDestruct = settings.autoDestruct;
+      if (settings.hardcoreToxicity !== undefined) user.settings.hardcoreToxicity = settings.hardcoreToxicity;
+      if (settings.incognitoVote !== undefined) user.settings.incognitoVote = settings.incognitoVote;
+      if (settings.hapticFeedback !== undefined) user.settings.hapticFeedback = settings.hapticFeedback;
+      user.markModified('settings');
+    }
+
+    await user.save();
 
     res.status(200).json({
       success: true,
