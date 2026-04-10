@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../../components/layout/Navbar';
 import Button from '../../components/ui/Button';
 import toast from 'react-hot-toast';
@@ -10,7 +10,7 @@ import { authAPI } from '../../lib/api';
 import Footer from '../../components/layout/Footer';
 
 export default function SettingsPage() {
-  const { user, updateUser } = useAuth();
+  const { user, loading: authLoading, updateUser } = useAuth();
   const router = useRouter();
   
   const [toggles, setToggles] = useState({
@@ -19,6 +19,22 @@ export default function SettingsPage() {
     incognitoVote: user?.settings?.incognitoVote || false,
     hapticFeedback: user?.settings?.hapticFeedback ?? true,
   });
+
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.replace('/auth/login');
+    }
+  }, [authLoading, router, user]);
+
+  useEffect(() => {
+    if (!user?.settings) return;
+    setToggles({
+      autoDestruct: user.settings.autoDestruct || false,
+      hardcoreToxicity: user.settings.hardcoreToxicity || false,
+      incognitoVote: user.settings.incognitoVote || false,
+      hapticFeedback: user.settings.hapticFeedback ?? true,
+    });
+  }, [user]);
 
   const handleToggle = async (key) => {
     const newVal = !toggles[key];
@@ -35,6 +51,8 @@ export default function SettingsPage() {
       setToggles(toggles);
     }
   };
+
+  if (authLoading || !user) return null;
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-base)', display: 'flex', flexDirection: 'column' }}>

@@ -83,6 +83,32 @@ export default function DebatePage() {
   useEffect(() => { fetchDebate(); }, [fetchDebate]);
   useEffect(() => { if (debate) fetchArguments(); }, [debate, fetchArguments]);
 
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!user || !id) {
+      setBookmarked(false);
+      return undefined;
+    }
+
+    const loadBookmarkState = async () => {
+      try {
+        const { data } = await userAPI.getBookmarks();
+        if (!cancelled) {
+          setBookmarked(data.debates.some((savedDebate) => savedDebate._id === id));
+        }
+      } catch {
+        if (!cancelled) setBookmarked(false);
+      }
+    };
+
+    loadBookmarkState();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [id, user]);
+
   // Handle AI Auto-Destruct Triggers
   useEffect(() => {
     if (!user?.settings?.autoDestruct || debate?.status === 'closed') return;
@@ -99,28 +125,11 @@ export default function DebatePage() {
       interval = setInterval(() => setAutoDestructTimer(prev => prev - 1), 1000);
     } else if (timerActive && autoDestructTimer === 0) {
       setTimerActive(false);
-      toast('💥 AI AUTO-DESTRUCT INITIATED!', { icon: '🤖', style: { background: 'var(--accent)', color: '#fff' }, duration: 4000 });
-      const dominantSide = supportArgs.length >= opposeArgs.length ? 'support' : 'oppose';
-      const aiTargetSide = dominantSide === 'support' ? 'oppose' : 'support';
-      
-      const generatedRbuttal = {
-        _id: 'ai-rebuttal-' + Date.now(),
-        side: aiTargetSide,
-        content: `[CLAUDE/GEMINI AUTO-DESTRUCT SEQUENCE INITIATED]\nYour points demonstrate a fundamental lack of baseline context. If we examine the empirical data regarding this topic, your premise completely collapses under scrutiny...`,
-        author: { username: 'DebateHub AI', reputationPoints: 9999, role: 'admin' },
-        upvotes: Date.now() % 42, downvotes: 0, score: 99, 
-        createdAt: new Date().toISOString()
-      };
-      
-      if (aiTargetSide === 'support') setSupportArgs(p => [generatedRbuttal, ...p]);
-      else                            setOpposeArgs(p => [generatedRbuttal, ...p]);
-      
-      setDebate(prev => ({
-        ...prev,
-        totalArguments: prev.totalArguments + 1,
-        supportCount: aiTargetSide === 'support' ? prev.supportCount + 1 : prev.supportCount,
-        opposeCount:  aiTargetSide === 'oppose' ? prev.opposeCount + 1 : prev.opposeCount,
-      }));
+      toast('AI auto-destruct timer expired. No automatic rebuttal was posted.', {
+        icon: '🤖',
+        style: { background: 'var(--accent)', color: '#fff' },
+        duration: 4000,
+      });
     }
     return () => clearInterval(interval);
   }, [timerActive, autoDestructTimer, supportArgs.length, opposeArgs.length]);

@@ -17,11 +17,6 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [showPass, setShowPass] = useState(false);
 
-  // Redirect if already logged in
-  useEffect(() => {
-    if (user) router.replace('/debates');
-  }, [user, router]);
-
   // Load Google Identity Services
   useEffect(() => {
     const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
@@ -51,7 +46,7 @@ export default function LoginPage() {
       const { data } = await authAPI.googleAuth(credential);
       login(data.token, data.user);
       toast.success(`Welcome back, ${data.user.username}!`);
-      router.push('/debates');
+      router.push('/');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Google login failed.');
     } finally {
@@ -77,7 +72,7 @@ export default function LoginPage() {
       const { data } = await authAPI.login(form);
       login(data.token, data.user);
       toast.success(`Welcome back, ${data.user.username}! 👋`);
-      router.push('/debates');
+      router.push('/');
     } catch (err) {
       const msg = err.response?.data?.message || 'Login failed. Please try again.';
       toast.error(msg);
@@ -100,7 +95,7 @@ export default function LoginPage() {
           Welcome back
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem' }}>
-          Sign in to continue your debates.
+          Sign in to enter the main arena.
         </p>
       </div>
 

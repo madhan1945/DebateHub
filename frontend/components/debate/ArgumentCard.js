@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuth } from '../../lib/auth';
 import { argumentAPI } from '../../lib/api';
 import toast from 'react-hot-toast';
@@ -15,6 +15,34 @@ export default function ArgumentCard({ argument: initialArg, debateStatus, onRep
 
   const isOwn    = user?._id === arg.author?._id;
   const isClosed = debateStatus === 'closed';
+
+  useEffect(() => {
+    setArg(initialArg);
+  }, [initialArg]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!user || isOwn || isClosed) {
+      setMyVote(null);
+      return undefined;
+    }
+
+    const loadMyVote = async () => {
+      try {
+        const { data } = await argumentAPI.getMyVote(initialArg._id);
+        if (!cancelled) setMyVote(data.voteType);
+      } catch {
+        if (!cancelled) setMyVote(null);
+      }
+    };
+
+    loadMyVote();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [initialArg._id, isClosed, isOwn, user]);
 
   const handleVote = async (voteType) => {
     if (!user) return toast.error('Sign in to vote.');

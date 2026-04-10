@@ -25,10 +25,6 @@ export default function RegisterPage() {
   const [agreed, setAgreed]   = useState(false);
 
   useEffect(() => {
-    if (user) router.replace('/debates');
-  }, [user, router]);
-
-  useEffect(() => {
     const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
     if (!clientId) return;
     const script = document.createElement('script');
@@ -52,7 +48,7 @@ export default function RegisterPage() {
       const { data } = await authAPI.googleAuth(credential);
       login(data.token, data.user);
       toast.success(`Welcome to DebateHub, ${data.user.username}! 🎉`);
-      router.push('/debates');
+      router.push('/');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Google sign-up failed.');
     } finally {
@@ -92,7 +88,7 @@ export default function RegisterPage() {
       });
       login(data.token, data.user);
       toast.success(`Account created! Welcome, ${data.user.username} 🎉`);
-      router.push('/debates');
+      router.push('/');
     } catch (err) {
       const msg = err.response?.data?.message || 'Registration failed.';
       toast.error(msg);

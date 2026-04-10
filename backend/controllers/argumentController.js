@@ -54,7 +54,10 @@ const createArgument = async (req, res, next) => {
       if (side === 'support') updateDebate.$inc.supportCount = 1;
       else                    updateDebate.$inc.opposeCount  = 1;
     }
-    if (!debate.participants.includes(req.user._id)) {
+    const isParticipant = debate.participants.some(
+      (participantId) => participantId.toString() === req.user._id.toString()
+    );
+    if (!isParticipant) {
       updateDebate.$addToSet = { participants: req.user._id };
       await User.findByIdAndUpdate(req.user._id, { $inc: { debatesParticipated: 1 } });
     }
@@ -184,21 +187,34 @@ const voteArgument = async (req, res, next) => {
     const existingVote = await Vote.findOne({ argument: argument._id, user: req.user._id });
 
     let deltaUp = 0, deltaDown = 0;
+    let authorRepDelta = 0;
     let action  = '';
 
     if (existingVote) {
       if (existingVote.voteType === voteType) {
         // Remove vote (toggle off)
         await existingVote.deleteOne();
-        if (voteType === 'upvote')   deltaUp   = -1;
-        else                          deltaDown = -1;
+        if (voteType === 'upvote') {
+          deltaUp = -1;
+          authorRepDelta = -1;
+        } else {
+          deltaDown = -1;
+        }
         action = 'removed';
       } else {
         // Switch vote
+        const previousVoteType = existingVote.voteType;
         existingVote.voteType = voteType;
         await existingVote.save();
-        if (voteType === 'upvote') { deltaUp = 1; deltaDown = -1; }
-        else                       { deltaUp = -1; deltaDown = 1; }
+        if (voteType === 'upvote') {
+          deltaUp = 1;
+          deltaDown = -1;
+          if (previousVoteType !== 'upvote') authorRepDelta = 1;
+        } else {
+          deltaUp = -1;
+          deltaDown = 1;
+          if (previousVoteType === 'upvote') authorRepDelta = -1;
+        }
         action = 'switched';
       }
     } else {
@@ -209,8 +225,14 @@ const voteArgument = async (req, res, next) => {
 
       // Award 1 rep to argument author on new upvote
       if (voteType === 'upvote') {
-        await User.findByIdAndUpdate(argument.author, { $inc: { reputationPoints: 1, totalVotesReceived: 1 } });
+        authorRepDelta = 1;
       }
+    }
+
+    if (authorRepDelta !== 0) {
+      await User.findByIdAndUpdate(argument.author, {
+        $inc: { reputationPoints: authorRepDelta, totalVotesReceived: authorRepDelta },
+      });
     }
 
     // Recompute argument score
