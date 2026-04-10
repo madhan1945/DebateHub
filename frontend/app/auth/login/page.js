@@ -91,7 +91,7 @@ export default function LoginPage() {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="15 18 9 12 15 6"/></svg>
           Back to home
         </Link>
-        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, color: '#1a1422', marginBottom: '0.5rem' }}>
           Welcome back
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem' }}>

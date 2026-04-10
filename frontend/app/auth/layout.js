@@ -1,5 +1,7 @@
 ﻿'use client';
 
+import { usePathname } from 'next/navigation';
+
 const FLOATING_OBJECTS = [
   {
     title: 'Support',
@@ -64,13 +66,16 @@ const FLOATING_OBJECTS = [
 ];
 
 export default function AuthLayout({ children }) {
+  const pathname = usePathname();
+  const isUtilityAuthPage = pathname === '/auth/forgot-password';
+
   return (
     <div
       style={{
         minHeight: '100vh',
         display: 'flex',
         background:
-          'linear-gradient(180deg, var(--bg-base) 0%, #f7f7fb 100%)',
+          'radial-gradient(circle at top left, rgba(190, 124, 55, 0.14), transparent 30%), radial-gradient(circle at bottom right, rgba(46, 109, 116, 0.18), transparent 34%), linear-gradient(135deg, #0b1417 0%, #111d20 42%, #1d1611 100%)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -119,7 +124,7 @@ export default function AuthLayout({ children }) {
           position: 'absolute',
           inset: 0,
           background:
-            'radial-gradient(circle at 18% 14%, rgba(86,103,240,0.16), transparent 22%), radial-gradient(circle at 80% 18%, rgba(155,93,229,0.1), transparent 18%), radial-gradient(circle at 76% 78%, rgba(240,80,110,0.08), transparent 16%)',
+            'radial-gradient(circle at 18% 14%, rgba(209, 139, 59, 0.14), transparent 22%), radial-gradient(circle at 80% 18%, rgba(46, 109, 116, 0.10), transparent 18%), radial-gradient(circle at 76% 78%, rgba(190, 79, 47, 0.10), transparent 16%)',
           pointerEvents: 'none',
         }}
       />
@@ -127,14 +132,15 @@ export default function AuthLayout({ children }) {
       <div
         className="auth-side-panel"
         style={{
-          width: '52%',
-          borderRight: '1px solid var(--border)',
+          width: isUtilityAuthPage ? 0 : '52%',
+          borderRight: '1px solid rgba(255,255,255,0.08)',
           flexDirection: 'column',
           justifyContent: 'space-between',
           padding: '3rem 3.5rem',
           position: 'relative',
           overflow: 'hidden',
-          background: 'linear-gradient(180deg, rgba(255,255,255,0.32), rgba(255,255,255,0.08))',
+          background: 'linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
+          display: isUtilityAuthPage ? 'none' : undefined,
         }}
       >
         <div style={{ position: 'relative', zIndex: 2 }}>
@@ -144,43 +150,43 @@ export default function AuthLayout({ children }) {
                 width: 40,
                 height: 40,
                 borderRadius: 12,
-                background: 'linear-gradient(135deg, var(--brand) 0%, #9b5de5 100%)',
+                background: 'linear-gradient(135deg, #d18b3b 0%, #be4f2f 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 18px 45px rgba(86,103,240,0.22)',
+                boxShadow: '0 18px 45px rgba(209, 139, 59, 0.25)',
               }}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
             </div>
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: 'var(--text-primary)' }}>DebateHub</span>
+            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', color: '#f7efe4' }}>DebateHub</span>
           </div>
 
           <div style={{ maxWidth: 520 }}>
-            <p style={{ fontSize: '0.8rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '0.8rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(247,239,228,0.58)', marginBottom: '1rem' }}>
               Structured Thought Engine
             </p>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.6rem, 4vw, 4.25rem)', fontWeight: 400, lineHeight: 1.03, color: 'var(--text-primary)', marginBottom: '1rem' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.6rem, 4vw, 4.25rem)', fontWeight: 400, lineHeight: 1.03, color: '#fff3e4', marginBottom: '1rem' }}>
               Enter the
               <br />
-              <span className="text-gradient">argument engine.</span>
+              <span style={{ color: '#d9a15d' }}>argument engine.</span>
             </h2>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, fontSize: '1rem', maxWidth: 470, marginBottom: '1.5rem' }}>
+            <p style={{ color: 'rgba(247,239,228,0.74)', lineHeight: 1.75, fontSize: '1rem', maxWidth: 470, marginBottom: '1.5rem' }}>
               DebateHub is where opinions get tested, sharpened, and rebuilt in public. Structured sides, live rebuttals, and arguments that have to earn attention.
             </p>
             <blockquote
               style={{
                 maxWidth: 430,
                 padding: '1rem 1.2rem',
-                background: 'var(--bg-surface)',
-                border: '1px solid var(--border)',
+                background: 'rgba(255,255,255,0.08)',
+                border: '1px solid rgba(255,255,255,0.10)',
                 borderRadius: 'var(--radius-lg)',
-                boxShadow: 'var(--shadow-sm)',
+                boxShadow: '0 12px 30px rgba(0,0,0,0.18)',
               }}
             >
-              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', lineHeight: 1.45, color: 'var(--text-primary)' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', lineHeight: 1.45, color: '#fff3e4' }}>
                 "Enter with an opinion. Leave with a sharper one."
               </p>
             </blockquote>
@@ -216,9 +222,9 @@ export default function AuthLayout({ children }) {
                 width: 320,
                 height: 320,
                 borderRadius: '50%',
-                border: '1px solid rgba(86,103,240,0.24)',
+                border: '1px solid rgba(217, 161, 93, 0.25)',
                 transform: 'translate(-50%, -50%)',
-                boxShadow: '0 0 80px rgba(86,103,240,0.1)',
+                boxShadow: '0 0 80px rgba(217, 161, 93, 0.1)',
               }}
             />
             <div
@@ -229,7 +235,7 @@ export default function AuthLayout({ children }) {
                 width: 260,
                 height: 260,
                 borderRadius: '50%',
-                border: '1px solid rgba(155,93,229,0.28)',
+                border: '1px solid rgba(46, 109, 116, 0.26)',
                 transform: 'translate(-50%, -50%)',
                 animation: 'auth-spin 18s linear infinite',
               }}
@@ -242,8 +248,8 @@ export default function AuthLayout({ children }) {
                 width: 170,
                 height: 170,
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(86,103,240,0.9) 0%, rgba(155,93,229,0.82) 42%, rgba(86,103,240,0) 72%)',
-                boxShadow: '0 0 120px rgba(86,103,240,0.28)',
+                background: 'radial-gradient(circle, rgba(217, 161, 93, 0.95) 0%, rgba(190, 79, 47, 0.92) 40%, rgba(25, 21, 18, 0) 72%)',
+                boxShadow: '0 0 120px rgba(209, 139, 59, 0.32)',
                 animation: 'auth-pulse 4s ease-in-out infinite',
               }}
             />
@@ -256,11 +262,11 @@ export default function AuthLayout({ children }) {
                 height: 124,
                 borderRadius: '50%',
                 transform: 'translate(-50%, -50%)',
-                background: 'linear-gradient(135deg, #ffffff 0%, #e0e9ff 100%)',
+                background: 'linear-gradient(135deg, #f9c789 0%, #d76342 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 26px 65px rgba(86,103,240,0.2)',
+                boxShadow: '0 26px 65px rgba(215, 99, 66, 0.35)',
               }}
             >
               <div
@@ -268,11 +274,12 @@ export default function AuthLayout({ children }) {
                   width: 76,
                   height: 76,
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, var(--brand) 0%, #9b5de5 100%)',
+                  background: 'rgba(18, 18, 18, 0.25)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 14px 30px rgba(86,103,240,0.3)',
+                  backdropFilter: 'blur(10px)',
+                  boxShadow: '0 14px 30px rgba(0,0,0,0.22)',
                 }}
               >
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.1" strokeLinecap="round" strokeLinejoin="round">
@@ -297,9 +304,9 @@ export default function AuthLayout({ children }) {
                 width: 198,
                 padding: '1rem 1rem 0.95rem',
                 borderRadius: 22,
-                background: `linear-gradient(180deg, ${card.tint}, var(--bg-surface))`,
+                background: `linear-gradient(180deg, ${card.tint}, rgba(255,255,255,0.06))`,
                 border: `1px solid ${card.border}`,
-                boxShadow: '0 24px 70px rgba(0,0,0,0.08)',
+                boxShadow: '0 24px 70px rgba(0,0,0,0.24)',
                 backdropFilter: 'blur(16px)',
                 transform: `rotate(${card.rotate})`,
                 animation: 'auth-float 7s ease-in-out infinite',
@@ -313,22 +320,22 @@ export default function AuthLayout({ children }) {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'var(--text-primary)',
-                  background: 'var(--bg-elevated)',
-                  border: '1px solid var(--border)',
+                  color: '#f7efe4',
+                  background: 'rgba(255,255,255,0.10)',
+                  border: '1px solid rgba(255,255,255,0.08)',
                   marginBottom: '0.8rem',
-                  boxShadow: 'var(--shadow-sm)',
+                  boxShadow: '0 10px 24px rgba(0,0,0,0.18)',
                 }}
               >
                 {card.icon}
               </div>
-              <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--text-muted)', marginBottom: '0.55rem' }}>
+              <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(247,239,228,0.54)', marginBottom: '0.55rem' }}>
                 {card.title}
               </div>
-              <div style={{ fontSize: '0.98rem', lineHeight: 1.3, fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.4rem' }}>
+              <div style={{ fontSize: '0.98rem', lineHeight: 1.3, fontWeight: 600, color: '#fff8ef', marginBottom: '0.4rem' }}>
                 DebateHub
               </div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+              <div style={{ fontSize: '0.82rem', color: 'rgba(247,239,228,0.68)', lineHeight: 1.5 }}>
                 {card.note}
               </div>
             </div>
@@ -354,13 +361,13 @@ export default function AuthLayout({ children }) {
               style={{
                 padding: '1rem 1.1rem',
                 borderRadius: 18,
-                background: 'var(--bg-surface)',
-                border: '1px solid var(--border)',
-                boxShadow: 'var(--shadow-sm)',
+                background: 'rgba(255,255,255,0.06)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                boxShadow: '0 10px 28px rgba(0,0,0,0.18)',
               }}
             >
-              <div style={{ color: 'var(--text-primary)', fontSize: '1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{value}</div>
-              <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{label}</div>
+              <div style={{ color: '#fff7ed', fontSize: '1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{value}</div>
+              <div style={{ color: 'rgba(247,239,228,0.58)', fontSize: '0.8rem' }}>{label}</div>
             </div>
           ))}
         </div>
@@ -380,13 +387,23 @@ export default function AuthLayout({ children }) {
         <div
           style={{
             width: '100%',
-            maxWidth: 460,
+            maxWidth: isUtilityAuthPage ? 720 : 460,
             padding: '2rem',
             borderRadius: 30,
-            background: 'linear-gradient(180deg, var(--bg-surface), rgba(244,244,248,0.94))',
-            boxShadow: '0 30px 80px rgba(86,103,240,0.1)',
-            border: '1px solid var(--border)',
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.94), rgba(245, 239, 230, 0.9))',
+            boxShadow: '0 35px 100px rgba(0,0,0,0.24)',
+            border: '1px solid rgba(255,255,255,0.65)',
             backdropFilter: 'blur(16px)',
+            color: '#1a1422',
+            '--text-primary': '#1a1422',
+            '--text-secondary': '#4d5167',
+            '--text-muted': '#72768c',
+            '--bg-surface': 'rgba(255,255,255,0.92)',
+            '--bg-elevated': '#f4eef0',
+            '--bg-subtle': '#ece4e8',
+            '--border': 'rgba(26,20,34,0.10)',
+            '--border-strong': 'rgba(26,20,34,0.16)',
+            '--brand-light': 'rgba(86,103,240,0.12)',
           }}
         >
           {children}
