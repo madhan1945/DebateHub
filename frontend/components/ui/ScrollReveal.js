@@ -8,10 +8,17 @@ import { useEffect, useRef, useState } from 'react';
  * @param {boolean} staggerChildren - Wait slightly for child components
  */
 export default function ScrollReveal({ children, className = '', delay = 0 }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const domRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return undefined;
+    }
+
+    setIsVisible(false);
+
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
@@ -26,9 +33,7 @@ export default function ScrollReveal({ children, className = '', delay = 0 }) {
       observer.observe(domRef.current);
     }
     
-    return () => {
-      if (domRef.current) observer.unobserve(domRef.current);
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
