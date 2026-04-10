@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+const baseURL =
+  typeof window === 'undefined'
+    ? (process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api')
+    : (process.env.NEXT_PUBLIC_API_URL || '/api');
+
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api',
+  baseURL,
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
 });

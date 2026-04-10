@@ -4,6 +4,11 @@ import Navbar from '../../components/layout/Navbar';
 import Footer from '../../components/layout/Footer';
 import Button from '../../components/ui/Button';
 
+const supportApiUrl =
+  typeof window === 'undefined'
+    ? (process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api')
+    : (process.env.NEXT_PUBLIC_API_URL || '/api');
+
 export default function HelpPage() {
   const [messages, setMessages] = useState([
     { role: 'bot', text: "Welcome to the DebateHub Help Centre! I'm your AI assistant. How can I help you today?" }
@@ -44,7 +49,7 @@ export default function HelpPage() {
         content: m.text 
       }));
 
-      const response = await fetch('http://localhost:5000/api/support/chat', {
+      const response = await fetch(`${supportApiUrl}/support/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: payloadMessages })

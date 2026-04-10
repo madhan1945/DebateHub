@@ -3,14 +3,22 @@ import { useEffect, useRef, useCallback } from 'react';
 
 let socketInstance = null;
 
+function getSocketBaseUrl() {
+  if (typeof window === 'undefined') {
+    return (process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api')
+      .replace(/\/api$/, '');
+  }
+
+  return (process.env.NEXT_PUBLIC_API_URL || '/api').replace(/\/api$/, '') || window.location.origin;
+}
+
 function getSocket() {
   if (typeof window === 'undefined') return null;
 
   if (!socketInstance || socketInstance.disconnected) {
     const { io } = require('socket.io-client');
     const token   = localStorage.getItem('dh_token');
-    const baseUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api')
-      .replace('/api', '');
+    const baseUrl = getSocketBaseUrl();
 
     socketInstance = io(baseUrl, {
       auth:  { token: token || '' },

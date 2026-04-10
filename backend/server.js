@@ -13,9 +13,27 @@ const { initSocket } = require('./socket');
 const app    = express();
 const server = http.createServer(app);
 
+const allowedOrigins = (
+  process.env.CLIENT_URLS ||
+  process.env.CLIENT_URL ||
+  'http://localhost:3000'
+)
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+const corsOrigin = (origin, callback) => {
+  if (!origin || allowedOrigins.includes(origin)) {
+    callback(null, true);
+    return;
+  }
+
+  callback(new Error(`CORS blocked for origin: ${origin}`));
+};
+
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: corsOrigin,
     methods: ['GET', 'POST'],
     credentials: true,
   },
@@ -29,7 +47,7 @@ connectDB();
 
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: corsOrigin,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
