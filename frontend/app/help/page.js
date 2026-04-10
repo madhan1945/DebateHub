@@ -4,9 +4,16 @@ import Navbar from '../../components/layout/Navbar';
 import Footer from '../../components/layout/Footer';
 import Button from '../../components/ui/Button';
 
+const serverApiUrl =
+  process.env.INTERNAL_API_URL ||
+  process.env.NEXT_PUBLIC_API_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? `http://127.0.0.1:${process.env.PORT || 10000}/api`
+    : 'http://localhost:5000/api');
+
 const supportApiUrl =
   typeof window === 'undefined'
-    ? (process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api')
+    ? serverApiUrl
     : (process.env.NEXT_PUBLIC_API_URL || '/api');
 
 export default function HelpPage() {

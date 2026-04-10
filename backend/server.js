@@ -1,18 +1,13 @@
 require('dotenv').config();
-const express   = require('express');
-const http      = require('http');
-const { Server } = require('socket.io');
-const cors      = require('cors');
-const helmet    = require('helmet');
-const rateLimit = require('express-rate-limit');
-const connectDB = require('./config/db');
-const errorHandler = require('./middleware/errorHandler');
-const { startCronJobs } = require('./utils/cron');
-const { initSocket } = require('./socket');
+const { createServer } = require('./createServer');
 
-const app    = express();
-const server = http.createServer(app);
+const { app, io, start } = createServer();
 
+start(process.env.PORT || 5000);
+
+module.exports = { app, io };
+
+/*
 const allowedOrigins = (
   process.env.CLIENT_URLS ||
   process.env.CLIENT_URL ||
@@ -87,3 +82,4 @@ server.listen(PORT, () => {
 });
 
 module.exports = { app, io };
+*/
