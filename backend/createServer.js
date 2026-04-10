@@ -52,7 +52,28 @@ function createServer({ frontendHandler } = {}) {
 
   connectDB();
 
-  app.use(helmet());
+  app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        baseUri: ["'self'"],
+        fontSrc: ["'self'", 'https:', 'data:', 'https://fonts.gstatic.com'],
+        imgSrc: [
+          "'self'",
+          'data:',
+          'blob:',
+          'https://ui-avatars.com',
+          'https://lh3.googleusercontent.com',
+          'https://*.googleusercontent.com',
+        ],
+        objectSrc: ["'none'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        scriptSrcAttr: ["'unsafe-inline'"],
+        styleSrc: ["'self'", 'https:', "'unsafe-inline'", 'https://fonts.googleapis.com'],
+        connectSrc: ["'self'", 'https:', 'wss:', 'ws:'],
+      },
+    },
+  }));
   app.use(cors({
     origin: corsOrigin,
     credentials: true,
