@@ -70,7 +70,7 @@ export default function AuthLayout({ children }) {
         minHeight: '100vh',
         display: 'flex',
         background:
-          'radial-gradient(circle at top left, rgba(86,103,240,0.16), transparent 30%), radial-gradient(circle at bottom right, rgba(155,93,229,0.12), transparent 34%), linear-gradient(180deg, #fafafa 0%, #f5f5fb 100%)',
+          'linear-gradient(180deg, var(--bg-base) 0%, #f7f7fb 100%)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -119,7 +119,7 @@ export default function AuthLayout({ children }) {
           position: 'absolute',
           inset: 0,
           background:
-            'radial-gradient(circle at 14% 18%, rgba(86,103,240,0.14), transparent 18%), radial-gradient(circle at 82% 78%, rgba(240,80,110,0.08), transparent 16%)',
+            'radial-gradient(circle at 18% 14%, rgba(86,103,240,0.16), transparent 22%), radial-gradient(circle at 80% 18%, rgba(155,93,229,0.1), transparent 18%), radial-gradient(circle at 76% 78%, rgba(240,80,110,0.08), transparent 16%)',
           pointerEvents: 'none',
         }}
       />
@@ -134,6 +134,7 @@ export default function AuthLayout({ children }) {
           padding: '3rem 3.5rem',
           position: 'relative',
           overflow: 'hidden',
+          background: 'linear-gradient(180deg, rgba(255,255,255,0.32), rgba(255,255,255,0.08))',
         }}
       >
         <div style={{ position: 'relative', zIndex: 2 }}>
@@ -173,7 +174,7 @@ export default function AuthLayout({ children }) {
               style={{
                 maxWidth: 430,
                 padding: '1rem 1.2rem',
-                background: 'rgba(255,255,255,0.76)',
+                background: 'var(--bg-surface)',
                 border: '1px solid var(--border)',
                 borderRadius: 'var(--radius-lg)',
                 boxShadow: 'var(--shadow-sm)',
@@ -296,7 +297,7 @@ export default function AuthLayout({ children }) {
                 width: 198,
                 padding: '1rem 1rem 0.95rem',
                 borderRadius: 22,
-                background: `linear-gradient(180deg, ${card.tint}, rgba(255,255,255,0.78))`,
+                background: `linear-gradient(180deg, ${card.tint}, var(--bg-surface))`,
                 border: `1px solid ${card.border}`,
                 boxShadow: '0 24px 70px rgba(0,0,0,0.08)',
                 backdropFilter: 'blur(16px)',
@@ -313,7 +314,7 @@ export default function AuthLayout({ children }) {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'var(--text-primary)',
-                  background: 'rgba(255,255,255,0.72)',
+                  background: 'var(--bg-elevated)',
                   border: '1px solid var(--border)',
                   marginBottom: '0.8rem',
                   boxShadow: 'var(--shadow-sm)',
@@ -353,7 +354,7 @@ export default function AuthLayout({ children }) {
               style={{
                 padding: '1rem 1.1rem',
                 borderRadius: 18,
-                background: 'rgba(255,255,255,0.72)',
+                background: 'var(--bg-surface)',
                 border: '1px solid var(--border)',
                 boxShadow: 'var(--shadow-sm)',
               }}
@@ -382,9 +383,9 @@ export default function AuthLayout({ children }) {
             maxWidth: 460,
             padding: '2rem',
             borderRadius: 30,
-            background: 'linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.82))',
-            boxShadow: '0 30px 80px rgba(86,103,240,0.12)',
-            border: '1px solid rgba(255,255,255,0.85)',
+            background: 'linear-gradient(180deg, var(--bg-surface), rgba(244,244,248,0.94))',
+            boxShadow: '0 30px 80px rgba(86,103,240,0.1)',
+            border: '1px solid var(--border)',
             backdropFilter: 'blur(16px)',
           }}
         >
