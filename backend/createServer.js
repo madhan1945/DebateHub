@@ -1,5 +1,6 @@
 const express = require('express');
 const http = require('http');
+const path = require('path');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -64,6 +65,14 @@ function createServer({ frontendHandler } = {}) {
   }));
   app.use(express.json({ limit: '10mb' }));
   app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+  if (frontendHandler) {
+    app.use(
+      '/_next/static',
+      express.static(path.join(process.cwd(), 'frontend', '.next', 'static'))
+    );
+    app.use(express.static(path.join(process.cwd(), 'frontend', 'public')));
+  }
 
   app.get('/health', (_req, res) => res.json({
     success: true,
