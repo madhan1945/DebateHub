@@ -20,18 +20,24 @@ function loadJsAsJsx() {
 }
 
 export default defineConfig(({ mode }) => {
+  // loadEnv reads from .env files on disk only.
+  // On Render, frontend/.env.local is gitignored and missing, so we must
+  // also check process.env which contains Render dashboard env vars.
   const env = loadEnv(mode, process.cwd(), '');
+
   const googleClientId =
-    env.GOOGLE_CLIENT_ID || env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || env.VITE_GOOGLE_CLIENT_ID || '';
+    env.GOOGLE_CLIENT_ID || env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || env.VITE_GOOGLE_CLIENT_ID ||
+    process.env.GOOGLE_CLIENT_ID || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || process.env.VITE_GOOGLE_CLIENT_ID ||
+    '';
 
   const frontendEnv = {
-    INTERNAL_API_URL: env.INTERNAL_API_URL || '',
-    NEXT_PUBLIC_API_URL: env.NEXT_PUBLIC_API_URL || '/api',
+    INTERNAL_API_URL: env.INTERNAL_API_URL || process.env.INTERNAL_API_URL || '',
+    NEXT_PUBLIC_API_URL: env.NEXT_PUBLIC_API_URL || process.env.NEXT_PUBLIC_API_URL || '/api',
     GOOGLE_CLIENT_ID: googleClientId,
     NEXT_PUBLIC_GOOGLE_CLIENT_ID: googleClientId,
     VITE_GOOGLE_CLIENT_ID: googleClientId,
     NODE_ENV: mode === 'production' ? 'production' : 'development',
-    PORT: env.PORT || '',
+    PORT: env.PORT || process.env.PORT || '',
   };
 
   return {
