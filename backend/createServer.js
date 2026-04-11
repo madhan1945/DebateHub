@@ -67,6 +67,7 @@ async function createServer() {
       contentSecurityPolicy: false,
       crossOriginEmbedderPolicy: false,
       crossOriginOpenerPolicy: false,
+      referrerPolicy: { policy: 'strict-origin-when-cross-origin' }, // Required for Google OAuth origin validation
     })
   );
 
