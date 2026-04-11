@@ -112,10 +112,7 @@ async function createServer() {
 
   initSocket(io);
 
-  serverApp.use(
-      '/_next/static',
-      express.static(path.join(frontendDir, '.next', 'static'))
-    );
+ 
     serverApp.use(express.static(path.join(frontendDir, 'public')));
 
     serverApp.all('*', (req, res) => {
