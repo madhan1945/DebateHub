@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const frontendEnv = {
     INTERNAL_API_URL: env.INTERNAL_API_URL || '',
-    VITE_API_URL: env.VITE_API_URL || '/api',
-    VITE_GOOGLE_CLIENT_ID: env.VITE_GOOGLE_CLIENT_ID || '',
+    NEXT_PUBLIC_API_URL: env.NEXT_PUBLIC_API_URL || '/api',
+    GOOGLE_CLIENT_ID: env.GOOGLE_CLIENT_ID || '',
     NODE_ENV: mode === 'production' ? 'production' : 'development',
     PORT: env.PORT || '',
   };

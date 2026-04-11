@@ -19,7 +19,7 @@ export default function LoginPage() {
 
   // Load Google Identity Services
   useEffect(() => {
-    const clientId = process.env.VITE_GOOGLE_CLIENT_ID;
+    const clientId = process.env.GOOGLE_CLIENT_ID;
     if (!clientId) return;
 
     const script = document.createElement('script');
@@ -102,10 +102,10 @@ export default function LoginPage() {
       {/* Google button */}
       <div style={{ marginBottom: '1.5rem' }}>
         <div id="google-btn" style={{ minHeight: 44 }} />
-        {!process.env.VITE_GOOGLE_CLIENT_ID && (
+        {!process.env.GOOGLE_CLIENT_ID && (
           <button
             type="button"
-            onClick={() => toast.error('Add VITE_GOOGLE_CLIENT_ID to .env.local')}
+            onClick={() => toast.error('Add GOOGLE_CLIENT_ID to .env.local')}
             style={{
               width: '100%',
               display: 'flex',

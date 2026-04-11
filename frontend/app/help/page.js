@@ -6,7 +6,7 @@ import Button from '../../components/ui/Button';
 
 const serverApiUrl =
   process.env.INTERNAL_API_URL ||
-  process.env.VITE_API_URL ||
+  process.env.NEXT_PUBLIC_API_URL ||
   (process.env.NODE_ENV === 'production'
     ? `http://127.0.0.1:${process.env.PORT || 10000}/api`
     : 'http://localhost:5000/api');
@@ -14,7 +14,7 @@ const serverApiUrl =
 const supportApiUrl =
   typeof window === 'undefined'
     ? serverApiUrl
-    : (process.env.VITE_API_URL || '/api');
+    : (process.env.NEXT_PUBLIC_API_URL || '/api');
 
 export default function HelpPage() {
   const [messages, setMessages] = useState([
