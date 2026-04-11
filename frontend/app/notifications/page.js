@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Link from '@/components/navigation/Link';
+import { useRouter } from '@/lib/navigation';
 import Navbar from '../../components/layout/Navbar';
 import Button from '../../components/ui/Button';
 import { notificationAPI } from '../../lib/api';

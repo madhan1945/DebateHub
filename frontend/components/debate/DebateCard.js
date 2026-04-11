@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from '@/components/navigation/Link';
 import { CountdownDisplay } from '../../lib/useCountdown';
 
 const CATEGORY_COLORS = {

@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import Link from '@/components/navigation/Link';
 import { useAuth } from '../../lib/auth';
 import { notificationAPI } from '../../lib/api';
 

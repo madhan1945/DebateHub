@@ -1,6 +1,6 @@
-﻿'use client';
+'use client';
 
-import { usePathname } from 'next/navigation';
+import { usePathname } from '@/lib/navigation';
 
 const FLOATING_OBJECTS = [
   {

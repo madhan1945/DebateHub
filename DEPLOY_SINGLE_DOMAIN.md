@@ -4,7 +4,7 @@ This project can be deployed behind one public URL such as `https://yourdomain.c
 
 ## Architecture
 
-- Next.js frontend runs on port `3000`
+- React/Vite frontend runs on port `5173` in development and builds to static assets
 - Express + Socket.IO backend runs on port `5000`
 - A reverse proxy routes:
 - `/` to the frontend
@@ -18,9 +18,9 @@ Users only open one link: `https://yourdomain.com`
 Create `frontend/.env.local`:
 
 ```env
-NEXT_PUBLIC_API_URL=/api
+VITE_API_URL=/api
 INTERNAL_API_URL=http://127.0.0.1:5000/api
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
+VITE_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 ```
 
 ## Backend Environment

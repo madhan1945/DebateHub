@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useSearchParams, useRouter } from '@/lib/navigation';
 import Navbar from '../../components/layout/Navbar';
 import DebateCard from '../../components/debate/DebateCard';
 import { searchAPI } from '../../lib/api';

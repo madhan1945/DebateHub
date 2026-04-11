@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Link from '@/components/navigation/Link';
+import { useRouter } from '@/lib/navigation';
 import toast from 'react-hot-toast';
 import { useAuth } from '../../../lib/auth';
 import { authAPI } from '../../../lib/api';
@@ -19,7 +19,7 @@ export default function LoginPage() {
 
   // Load Google Identity Services
   useEffect(() => {
-    const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+    const clientId = process.env.VITE_GOOGLE_CLIENT_ID;
     if (!clientId) return;
 
     const script = document.createElement('script');
@@ -102,10 +102,10 @@ export default function LoginPage() {
       {/* Google button */}
       <div style={{ marginBottom: '1.5rem' }}>
         <div id="google-btn" style={{ minHeight: 44 }} />
-        {!process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID && (
+        {!process.env.VITE_GOOGLE_CLIENT_ID && (
           <button
             type="button"
-            onClick={() => toast.error('Add NEXT_PUBLIC_GOOGLE_CLIENT_ID to .env.local')}
+            onClick={() => toast.error('Add VITE_GOOGLE_CLIENT_ID to .env.local')}
             style={{
               width: '100%',
               display: 'flex',

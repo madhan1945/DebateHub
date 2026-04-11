@@ -1,7 +1,6 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const { createRequire } = require('module');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -10,48 +9,38 @@ const errorHandler = require('./middleware/errorHandler');
 const { startCronJobs } = require('./utils/cron');
 const { initSocket } = require('./socket');
 
-// Use process.cwd() based resolution instead of __dirname for Render compatibility
-const frontendDir = path.resolve(process.cwd(), '../frontend');
-const frontendRequire = createRequire(path.join(frontendDir, 'package.json'));
-const next = frontendRequire('next');
-
-const dev = process.env.NODE_ENV !== 'production';
-const nextApp = next({
-  dev,
-  dir: frontendDir,
-  conf: {
-    distDir: '.next',
-  },
-});
-
-const handle = nextApp.getRequestHandler();
+const frontendDir = path.resolve(__dirname, '..', 'frontend');
+const frontendDistDir = path.join(frontendDir, 'dist');
 
 function getAllowedOrigins() {
-  return (
-    process.env.CLIENT_URLS ||
-    process.env.CLIENT_URL ||
-    'http://localhost:3000'
-  )
-    .split(',')
+  const configuredOrigins = [
+    process.env.CLIENT_URLS,
+    process.env.CLIENT_URL,
+  ]
+    .filter(Boolean)
+    .flatMap((origins) => origins.split(','))
     .map((origin) => origin.trim())
     .filter(Boolean);
+
+  return [
+    ...new Set([
+      ...configuredOrigins,
+      'http://localhost:5000',
+      'http://127.0.0.1:5000',
+      'http://localhost:5173',
+      'http://127.0.0.1:5173',
+    ]),
+  ];
 }
 
 function createCorsOrigin(allowedOrigins) {
   return (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-      return;
-    }
-    callback(new Error(`CORS blocked for origin: ${origin}`));
+    callback(null, true);
   };
 }
 
 async function createServer() {
   const serverApp = express();
-
-  // Prepare Next.js FIRST before anything else
-  await nextApp.prepare();
 
   const server = http.createServer(serverApp);
   const allowedOrigins = getAllowedOrigins();
@@ -121,15 +110,16 @@ async function createServer() {
     });
   });
 
-  // ── Error handler BEFORE Next.js handler ────────────────────────────────────
+  // ── Error handler before React SPA fallback ────────────────────────────────────
   serverApp.use(errorHandler);
 
   // ── Socket.IO ────────────────────────────────────────────────────────────────
   initSocket(io);
 
-  // ── Next.js static + SSR — must be LAST, handles _next/static internally ────
-  serverApp.all('*', (req, res) => {
-    return handle(req, res);
+  // React static assets + SPA fallback - must be LAST.
+  serverApp.use(express.static(frontendDistDir));
+  serverApp.get('*', (_req, res) => {
+    res.sendFile(path.join(frontendDistDir, 'index.html'));
   });
 
   const start = (port = process.env.PORT || 5000) => {

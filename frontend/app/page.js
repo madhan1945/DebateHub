@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import Link from '@/components/navigation/Link';
+import { useRouter } from '@/lib/navigation';
 import Navbar from '../components/layout/Navbar';
 import Button from '../components/ui/Button';
 import { debateAPI } from '../lib/api';

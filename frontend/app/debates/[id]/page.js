@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter } from '@/lib/navigation';
 import Navbar from '../../../components/layout/Navbar';
 import ArgumentCard from '../../../components/debate/ArgumentCard';
 import ArgumentForm from '../../../components/debate/ArgumentForm';

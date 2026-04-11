@@ -4,7 +4,7 @@ import Navbar from '../../components/layout/Navbar';
 import Button from '../../components/ui/Button';
 import toast from 'react-hot-toast';
 import { useAuth } from '../../lib/auth';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/lib/navigation';
 
 export default function SubscriptionPage() {
   const { user } = useAuth();

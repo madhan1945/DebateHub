@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The platform for structured debates, powerful arguments, and real-time discussion."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <title>DebateHub - Debate. Discuss. Decide.</title>
+    <script>
+      try {
+        const t = localStorage.getItem('dh_theme') || 'dark';
+        document.documentElement.classList.toggle('dark', t === 'dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -10,12 +10,12 @@ DebateHub is a full-stack web application for structured online debates with rea
 
 | Layer       | Technology                              |
 |-------------|------------------------------------------|
-| Frontend    | Next.js 14, Tailwind CSS, Framer Motion |
+| Frontend    | React, Vite, Tailwind CSS, Framer Motion |
 | Backend     | Node.js, Express.js                     |
 | Database    | MongoDB Atlas + Mongoose                |
 | Real-Time   | Socket.IO                               |
 | Auth        | JWT + Google OAuth                      |
-| Deployment  | Vercel (frontend) + Render (backend)    |
+| Deployment  | React static build + Render/Express backend    |
 
 ---
 
@@ -88,14 +88,14 @@ MONGO_URI=mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/debatehub
 JWT_SECRET=your_long_random_secret_here
 JWT_EXPIRES_IN=7d
 GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 ```
 
 **frontend/.env.local**
 ```
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
+VITE_API_URL=http://localhost:5000/api
+VITE_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 ```
 
 ---
@@ -123,7 +123,7 @@ NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 | 2   | Debates, Arguments, Voting, Ranking        |
 | 3   | Real-Time (Socket.IO), Profiles, Search    |
 | 4   | AI Features, Leaderboard, Admin Panel      |
-| 5   | Testing, Deployment (Vercel + Render)      |
+| 5   | Testing, Deployment (React build + Render)      |
 
 ---
 
@@ -136,11 +136,11 @@ NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 4. Build command: `npm install`
 5. Start command: `node server.js`
 
-**Frontend → Vercel**
-1. Import GitHub repo to Vercel
-2. Set root directory to `frontend`
-3. Add environment variables (`NEXT_PUBLIC_API_URL` pointing to Render URL)
-4. Deploy
+**Frontend static build**
+1. Build the frontend with `npm run build`
+2. Serve `frontend/dist` from your static host or the unified Express server
+3. Add environment variables (`VITE_API_URL` pointing to Render URL)
+4. Deploy the generated static assets
 
 ---
 

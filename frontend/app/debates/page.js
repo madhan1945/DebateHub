@@ -4,7 +4,7 @@ import Navbar from '../../components/layout/Navbar';
 import DebateCard from '../../components/debate/DebateCard';
 import Button from '../../components/ui/Button';
 import { debateAPI } from '../../lib/api';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/lib/navigation';
 import { useAuth } from '../../lib/auth';
 
 const CATEGORIES = ['All','Technology','Education','Environment','Business','Politics','Science','Health','Society','Culture','Sports','Other'];

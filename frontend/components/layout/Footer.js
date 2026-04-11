@@ -1,5 +1,5 @@
-﻿'use client';
-import Link from 'next/link';
+'use client';
+import Link from '@/components/navigation/Link';
 
 const SOCIALS = [
   {
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>© {new Date().getFullYear()} DebateHub. All rights reserved.</p>
+          <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>� {new Date().getFullYear()} DebateHub. All rights reserved.</p>
         </div>
       </div>
     </footer>

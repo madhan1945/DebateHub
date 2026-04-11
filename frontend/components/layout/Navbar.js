@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import Link from '@/components/navigation/Link';
+import { usePathname, useRouter } from '@/lib/navigation';
 import { useAuth } from '../../lib/auth';
 import ThemeToggle from '../ui/ThemeToggle';
 import NotificationBell from '../ui/NotificationBell';

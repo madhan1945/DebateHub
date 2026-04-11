@@ -13,7 +13,7 @@ This repo is configured to run as one Render web service.
 
 ```env
 NODE_ENV=production
-NEXT_PUBLIC_API_URL=/api
+VITE_API_URL=/api
 CLIENT_URL=https://your-service-name.onrender.com
 CLIENT_URLS=https://your-service-name.onrender.com
 MONGO_URI=your_mongodb_uri
@@ -36,6 +36,6 @@ npm start
 
 ## How It Works
 
-- Root `server.js` starts the Next.js frontend and Express API together
+- Root `server.js` serves the React build and Express API together
 - `backend/createServer.js` sets up the API, database, and Socket.IO server
 - Render deploys the repo root as a single service and exposes one public URL
