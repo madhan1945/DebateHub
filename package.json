@@ -8,6 +8,7 @@
   "scripts": {
     "build": "npm run build --workspace frontend",
     "start": "node server.js",
+    "dev": "npm run dev --workspace backend",
     "start:api": "npm run start --workspace backend",
     "dev:frontend": "npm run dev --workspace frontend",
     "dev:backend": "npm run dev --workspace backend"

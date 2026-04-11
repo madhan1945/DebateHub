@@ -1,8 +1,12 @@
 require('dotenv').config();
 const { createServer } = require('./createServer');
 
-const { app, io, start } = createServer();
+async function startServer() {
+  const { serverApp, io, start } = await createServer();
+  start(process.env.PORT || 5000);
+}
 
-start(process.env.PORT || 5000);
-
-module.exports = { app, io };
+startServer().catch((error) => {
+  console.error('Failed to start backend server:', error);
+  process.exit(1);
+});

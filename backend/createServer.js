@@ -1,6 +1,7 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
+const { createRequire } = require('module');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -8,6 +9,18 @@ const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 const { startCronJobs } = require('./utils/cron');
 const { initSocket } = require('./socket');
+
+const frontendDir = path.join(__dirname, '../frontend');
+const frontendRequire = createRequire(path.join(frontendDir, 'package.json'));
+const next = frontendRequire('next');
+
+const dev = process.env.NODE_ENV !== 'production';
+const nextserverApp = next({
+  dev,
+  dir: frontendDir,
+});
+
+const handle = nextserverApp.getRequestHandler();
 
 function getAllowedOrigins() {
   return (
@@ -31,9 +44,11 @@ function createCorsOrigin(allowedOrigins) {
   };
 }
 
-function createServer({ frontendHandler } = {}) {
-  const app = express();
-  const server = http.createServer(app);
+async function createServer() {
+  const serverApp = express();
+  await nextserverApp.prepare();
+
+  const server = http.createServer(serverApp);
   const allowedOrigins = getAllowedOrigins();
   const corsOrigin = createCorsOrigin(allowedOrigins);
 
@@ -46,84 +61,82 @@ function createServer({ frontendHandler } = {}) {
     pingTimeout: 60000,
   });
 
-  app.use((req, _res, next) => {
+  serverApp.use((req, _res, next) => {
     req.io = io;
     next();
   });
 
   connectDB();
 
-  app.use(helmet({
+  serverApp.use(helmet({
     contentSecurityPolicy: false,
     crossOriginEmbedderPolicy: false,
   }));
-  app.use(cors({
+  serverApp.use(cors({
     origin: corsOrigin,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));
-  app.use(express.json({ limit: '10mb' }));
-  app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+  serverApp.use(express.json({ limit: '10mb' }));
+  serverApp.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-  if (frontendHandler) {
-    app.use(
-      '/_next/static',
-      express.static(path.join(process.cwd(), 'frontend', '.next', 'static'))
-    );
-    app.use(express.static(path.join(process.cwd(), 'frontend', 'public')));
-  }
 
-  app.get('/health', (_req, res) => res.json({
+
+  serverApp.get('/health', (_req, res) => res.json({
     success: true,
     message: 'DebateHub API running',
     environment: process.env.NODE_ENV,
     timestamp: new Date().toISOString(),
   }));
 
-  app.use('/api/auth', require('./routes/auth'));
-  app.use('/api/debates', require('./routes/debates'));
-  app.use('/api/arguments', require('./routes/arguments'));
-  app.use('/api/stats', require('./routes/stats'));
-  app.use('/api/users', require('./routes/users'));
-  app.use('/api/notifications', require('./routes/notifications'));
-  app.use('/api/search', require('./routes/search'));
-  app.use('/api/ai', require('./routes/ai'));
-  app.use('/api/support', require('./routes/support'));
-  app.use('/api/admin', require('./routes/admin'));
+  serverApp.use('/api/auth', require('./routes/auth'));
+  serverApp.use('/api/debates', require('./routes/debates'));
+  serverApp.use('/api/arguments', require('./routes/arguments'));
+  serverApp.use('/api/stats', require('./routes/stats'));
+  serverApp.use('/api/users', require('./routes/users'));
+  serverApp.use('/api/notifications', require('./routes/notifications'));
+  serverApp.use('/api/search', require('./routes/search'));
+  serverApp.use('/api/ai', require('./routes/ai'));
+  serverApp.use('/api/support', require('./routes/support'));
+  serverApp.use('/api/admin', require('./routes/admin'));
 
-  app.use('/api', (req, res) => {
+  serverApp.use('/api', (req, res) => {
     res.status(404).json({
       success: false,
       message: `Route ${req.originalUrl} not found.`,
     });
   });
 
-  app.use(errorHandler);
+  serverApp.use(errorHandler);
 
   initSocket(io);
 
-  if (frontendHandler) {
-    app.all('*', frontendHandler);
-  } else {
-    app.use((req, res) => {
-      res.status(404).json({
-        success: false,
-        message: `Route ${req.originalUrl} not found.`,
-      });
-    });
-  }
+  serverApp.use(
+      '/_next/static',
+      express.static(path.join(frontendDir, '.next', 'static'))
+    );
+    serverApp.use(express.static(path.join(frontendDir, 'public')));
 
-  return {
-    app,
-    server,
-    io,
-    start(port = process.env.PORT || 5000) {
+    serverApp.all('*', (req, res) => {
+    return handle(req, res);
+  });
+
+
+  const start = (port = process.env.PORT || 5000) => {
       server.listen(port, () => {
         console.log(`DebateHub server running on port ${port} [${process.env.NODE_ENV || 'development'}]`);
         startCronJobs();
       });
-    },
+    }
+
+  
+
+  return {
+    serverApp,
+    server,
+    io,
+    start
   };
 }
 

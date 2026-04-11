@@ -1,21 +1,15 @@
-require('dotenv').config();
-const next = require('next');
+const path = require('path');
+const { createRequire } = require('module');
+
+const backendRequire = createRequire(path.join(__dirname, 'backend', 'package.json'));
+backendRequire('dotenv').config({ path: path.join(__dirname, 'backend', '.env') });
+
 const { createServer } = require('./backend/createServer');
 
-const dev = process.env.NODE_ENV !== 'production';
-const port = process.env.PORT || 10000;
-const nextApp = next({
-  dev,
-  dir: './frontend',
-});
-const handle = nextApp.getRequestHandler();
+const port = process.env.PORT || 5000;
 
-nextApp.prepare()
-  .then(() => {
-    const { start } = createServer({
-      frontendHandler: (req, res) => handle(req, res),
-    });
-
+createServer()
+  .then(({ start }) => {
     start(port);
   })
   .catch((error) => {
