@@ -10,17 +10,21 @@ const errorHandler = require('./middleware/errorHandler');
 const { startCronJobs } = require('./utils/cron');
 const { initSocket } = require('./socket');
 
-const frontendDir = path.join(__dirname, '../frontend');
+// Use process.cwd() based resolution instead of __dirname for Render compatibility
+const frontendDir = path.resolve(process.cwd(), '../frontend');
 const frontendRequire = createRequire(path.join(frontendDir, 'package.json'));
 const next = frontendRequire('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const nextserverApp = next({
+const nextApp = next({
   dev,
   dir: frontendDir,
+  conf: {
+    distDir: '.next',
+  },
 });
 
-const handle = nextserverApp.getRequestHandler();
+const handle = nextApp.getRequestHandler();
 
 function getAllowedOrigins() {
   return (
@@ -39,14 +43,15 @@ function createCorsOrigin(allowedOrigins) {
       callback(null, true);
       return;
     }
-
     callback(new Error(`CORS blocked for origin: ${origin}`));
   };
 }
 
 async function createServer() {
   const serverApp = express();
-  await nextserverApp.prepare();
+
+  // Prepare Next.js FIRST before anything else
+  await nextApp.prepare();
 
   const server = http.createServer(serverApp);
   const allowedOrigins = getAllowedOrigins();
@@ -68,28 +73,36 @@ async function createServer() {
 
   connectDB();
 
-  serverApp.use(helmet({
-    contentSecurityPolicy: false,
-    crossOriginEmbedderPolicy: false,
-  }));
-  serverApp.use(cors({
-    origin: corsOrigin,
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-  }));
+  serverApp.use(
+    helmet({
+      contentSecurityPolicy: false,
+      crossOriginEmbedderPolicy: false,
+    })
+  );
+
+  serverApp.use(
+    cors({
+      origin: corsOrigin,
+      credentials: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+    })
+  );
+
   serverApp.use(express.json({ limit: '10mb' }));
   serverApp.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+  // ── Health ──────────────────────────────────────────────────────────────────
+  serverApp.get('/health', (_req, res) =>
+    res.json({
+      success: true,
+      message: 'DebateHub API running',
+      environment: process.env.NODE_ENV,
+      timestamp: new Date().toISOString(),
+    })
+  );
 
-
-  serverApp.get('/health', (_req, res) => res.json({
-    success: true,
-    message: 'DebateHub API running',
-    environment: process.env.NODE_ENV,
-    timestamp: new Date().toISOString(),
-  }));
-
+  // ── API Routes ───────────────────────────────────────────────────────────────
   serverApp.use('/api/auth', require('./routes/auth'));
   serverApp.use('/api/debates', require('./routes/debates'));
   serverApp.use('/api/arguments', require('./routes/arguments'));
@@ -108,33 +121,27 @@ async function createServer() {
     });
   });
 
+  // ── Error handler BEFORE Next.js handler ────────────────────────────────────
   serverApp.use(errorHandler);
 
+  // ── Socket.IO ────────────────────────────────────────────────────────────────
   initSocket(io);
 
- 
-    serverApp.use(express.static(path.join(frontendDir, 'public')));
-
-    serverApp.all('*', (req, res) => {
+  // ── Next.js static + SSR — must be LAST, handles _next/static internally ────
+  serverApp.all('*', (req, res) => {
     return handle(req, res);
   });
 
-
   const start = (port = process.env.PORT || 5000) => {
-      server.listen(port, () => {
-        console.log(`DebateHub server running on port ${port} [${process.env.NODE_ENV || 'development'}]`);
-        startCronJobs();
-      });
-    }
-
-  
-
-  return {
-    serverApp,
-    server,
-    io,
-    start
+    server.listen(port, () => {
+      console.log(
+        `DebateHub server running on port ${port} [${process.env.NODE_ENV || 'development'}]`
+      );
+      startCronJobs();
+    });
   };
+
+  return { serverApp, server, io, start };
 }
 
 module.exports = { createServer };
