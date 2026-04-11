@@ -226,7 +226,7 @@ export default function HomePage() {
           </ScrollReveal>
 
           {loadingTrending ? (
-            <div style={{ display: 'grid', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gap: '1.25rem', minWidth: 0 }}>
               {[0,1,2].map(i => <div key={i} className="shimmer" style={{ height: 100, borderRadius: 'var(--radius-lg)' }} />)}
             </div>
           ) : trending.length === 0 ? (
@@ -234,7 +234,7 @@ export default function HomePage() {
               <p>No debates yet. <Link href="/debates/create" style={{ color: 'var(--brand)' }}>Create the first one →</Link></p>
             </div>
           ) : (
-            <div style={{ display: 'grid', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gap: '1.25rem', minWidth: 0 }}>
               {trending.map((debate, i) => {
                 const total      = (debate.supportCount || 0) + (debate.opposeCount || 0);
                 const supportPct = total > 0 ? Math.round((debate.supportCount / total) * 100) : 50;
@@ -246,7 +246,7 @@ export default function HomePage() {
                     <Link href={`/debates/${debate._id}`} style={{ textDecoration: 'none' }}>
                       <div
                         className="card"
-                        style={{ padding: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'center', transition: 'transform 0.2s, box-shadow 0.2s, border-color 0.2s', cursor: 'pointer' }}
+                        style={{ padding: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'center', transition: 'transform 0.2s, box-shadow 0.2s, border-color 0.2s', cursor: 'pointer', flexWrap: 'wrap' }}
                         onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = 'var(--shadow-md)'; e.currentTarget.style.borderColor = 'var(--border-strong)'; }}
                         onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow-sm)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
                       >

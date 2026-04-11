@@ -25,13 +25,14 @@ export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
   const [showPass, setShowPass] = useState(false);
   const [agreed, setAgreed]   = useState(false);
+  const [googleError, setGoogleError] = useState('');
 
   useEffect(() => {
     renderGoogleButton({
       elementId: 'google-register-btn',
       text: 'signup_with',
       callback: handleGoogleCallback,
-    }).catch((error) => console.warn(error.message));
+    }).catch((error) => setGoogleError(error.message));
   }, []);
 
   const handleGoogleCallback = async ({ credential }) => {
@@ -112,7 +113,12 @@ export default function RegisterPage() {
 
       {/* Google */}
       <div style={{ marginBottom: '1.5rem' }}>
-        <div id="google-register-btn" style={{ minHeight: 44 }} />
+        <div id="google-register-btn" style={{ minHeight: 44, width: '100%', display: 'flex', justifyContent: 'center' }} />
+        {googleError && (
+          <p style={{ marginTop: '0.5rem', fontSize: '0.78rem', color: 'var(--accent)', lineHeight: 1.45 }}>
+            {googleError}
+          </p>
+        )}
         {!getGoogleClientId() && (
           <button
             type="button"

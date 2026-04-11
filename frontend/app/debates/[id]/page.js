@@ -171,7 +171,7 @@ export default function DebatePage() {
         <Navbar />
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '2rem 1.5rem' }}>
           <div className="shimmer" style={{ height: 220, borderRadius: 'var(--radius-lg)', marginBottom: '1.5rem' }} />
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1.5rem' }}>
             {[0,1].map(i => <div key={i} className="shimmer" style={{ height: 400, borderRadius: 'var(--radius-lg)' }} />)}
           </div>
         </div>
@@ -273,7 +273,7 @@ export default function DebatePage() {
         </div>
 
         {/* Main layout: arguments + chat */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 340px', gap: '1.5rem', alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: '1.5rem', alignItems: 'start' }}>
 
           {/* Arguments section */}
           <div>
@@ -301,7 +301,7 @@ export default function DebatePage() {
             </div>
 
             {/* Two-column arguments */}
-            <div style={{ display: 'grid', gridTemplateColumns: activeTab === 'both' ? '1fr 1fr' : '1fr', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: activeTab === 'both' ? 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))' : '1fr', gap: '1.25rem' }}>
               {(activeTab === 'both' || activeTab === 'support') && (
                 <div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', padding: '0.625rem 1rem', borderRadius: 'var(--radius-md)', background: 'rgba(13,188,122,0.08)', border: '1px solid rgba(13,188,122,0.2)' }}>

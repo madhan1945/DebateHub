@@ -171,7 +171,7 @@ export default function SearchPage() {
             </div>
 
             {loading ? (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))', gap: '1.25rem' }}>
                 {[0,1,2,3].map(i => <div key={i} className="shimmer" style={{ height: 200, borderRadius: 'var(--radius-lg)' }} />)}
               </div>
             ) : results.length === 0 ? (
@@ -181,7 +181,7 @@ export default function SearchPage() {
                 <p>Try different keywords or browse all debates.</p>
               </div>
             ) : (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))', gap: '1.25rem' }}>
                 {results.map(d => <DebateCard key={d._id} debate={d} />)}
               </div>
             )}

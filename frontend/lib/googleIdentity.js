@@ -36,14 +36,17 @@ export async function renderGoogleButton({ elementId, text, callback }) {
   if (!element) return;
 
   element.innerHTML = '';
+  const width = Math.max(240, Math.min(400, Math.floor(element.getBoundingClientRect().width || 320)));
   google.accounts.id.initialize({
     client_id: clientId,
     callback,
+    use_fedcm_for_prompt: false,
+    itp_support: true,
   });
   google.accounts.id.renderButton(element, {
     theme: 'outline',
     size: 'large',
-    width: 320,
+    width,
     text,
   });
 }

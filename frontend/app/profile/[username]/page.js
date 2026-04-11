@@ -166,7 +166,7 @@ export default function ProfilePage() {
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', gap: '1rem' }}>
                 <div>
                   <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', display: 'block', marginBottom: '0.375rem' }}>Username</label>
                   <input value={editForm.username} onChange={e => setEditForm(f => ({ ...f, username: e.target.value }))}
@@ -288,7 +288,7 @@ export default function ProfilePage() {
               {isOwnProfile && <Button variant="primary" size="md" onClick={() => router.push('/debates/create')} style={{ marginTop: '1rem' }}>Create your first debate</Button>}
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '1.25rem' }}>
               {debates.map(d => <DebateCard key={d._id} debate={d} />)}
             </div>
           )
@@ -330,7 +330,7 @@ export default function ProfilePage() {
               <p>🔖 No bookmarks yet. Save debates to read them later!</p>
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '1.25rem' }}>
               {bookmarks.map(d => <DebateCard key={d._id} debate={d} />)}
             </div>
           )

@@ -18,6 +18,7 @@ export default function LoginPage() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [showPass, setShowPass] = useState(false);
+  const [googleError, setGoogleError] = useState('');
 
   // Load Google Identity Services
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function LoginPage() {
       elementId: 'google-btn',
       text: 'signin_with',
       callback: handleGoogleCallback,
-    }).catch((error) => console.warn(error.message));
+    }).catch((error) => setGoogleError(error.message));
   }, []);
 
   const handleGoogleCallback = async ({ credential }) => {
@@ -89,7 +90,12 @@ export default function LoginPage() {
 
       {/* Google button */}
       <div style={{ marginBottom: '1.5rem' }}>
-        <div id="google-btn" style={{ minHeight: 44 }} />
+        <div id="google-btn" style={{ minHeight: 44, width: '100%', display: 'flex', justifyContent: 'center' }} />
+        {googleError && (
+          <p style={{ marginTop: '0.5rem', fontSize: '0.78rem', color: 'var(--accent)', lineHeight: 1.45 }}>
+            {googleError}
+          </p>
+        )}
         {!getGoogleClientId() && (
           <button
             type="button"

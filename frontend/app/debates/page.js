@@ -28,7 +28,7 @@ export default function DebatesPage() {
   const [searchInput, setSearchInput] = useState('');
   const [category, setCategory]   = useState('All');
   const [sort, setSort]           = useState('newest');
-  const [status, setStatus]       = useState('active');
+  const [status, setStatus]       = useState('all');
   const loaderRef = useRef(null);
 
   const fetchDebates = useCallback(async (pageNum = 1, replace = true) => {
@@ -165,7 +165,7 @@ export default function DebatesPage() {
       {/* Debates grid */}
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '2rem 1.5rem' }}>
         {loading ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))', gap: '1.25rem' }}>
             {Array.from({ length: 6 }).map((_, i) => (
               <div key={i} className="shimmer" style={{ height: 220, borderRadius: 'var(--radius-lg)' }} />
             ))}
@@ -183,7 +183,7 @@ export default function DebatesPage() {
           </div>
         ) : (
           <>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))', gap: '1.25rem' }}>
               {debates.map(debate => <DebateCard key={debate._id} debate={debate} />)}
             </div>
 

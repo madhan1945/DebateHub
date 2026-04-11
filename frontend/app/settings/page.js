@@ -65,7 +65,7 @@ export default function SettingsPage() {
         {/* Crazy Functionalities */}
         <section style={{ marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Debate Modifiers</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1.5rem' }}>
             
             <SettingCard 
               title="⏳ AI Auto-Destruct Rebuttals" 
