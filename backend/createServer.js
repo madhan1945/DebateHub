@@ -66,6 +66,7 @@ async function createServer() {
     helmet({
       contentSecurityPolicy: false,
       crossOriginEmbedderPolicy: false,
+      crossOriginOpenerPolicy: false,
     })
   );
 
