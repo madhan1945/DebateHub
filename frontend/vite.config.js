@@ -39,6 +39,19 @@ export default defineConfig(({ mode }) => {
     define: {
       'process.env': JSON.stringify(frontendEnv),
     },
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:5000',
+          changeOrigin: true,
+        },
+        '/socket.io': {
+          target: 'http://localhost:5000',
+          ws: true,
+          changeOrigin: true,
+        },
+      },
+    },
     esbuild: {
       loader: 'jsx',
       include: /.*\.jsx?$/,

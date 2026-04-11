@@ -1,19 +1,8 @@
 import axios from 'axios';
-
-const serverApiUrl =
-  process.env.INTERNAL_API_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  (process.env.NODE_ENV === 'production'
-    ? `http://127.0.0.1:${process.env.PORT || 10000}/api`
-    : 'http://localhost:5000/api');
-
-const baseURL =
-  typeof window === 'undefined'
-    ? serverApiUrl
-    : (process.env.NEXT_PUBLIC_API_URL || '/api');
+import { getApiBaseUrl } from './env';
 
 const api = axios.create({
-  baseURL,
+  baseURL: getApiBaseUrl(),
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
 });

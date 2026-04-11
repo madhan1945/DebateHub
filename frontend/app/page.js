@@ -197,7 +197,7 @@ export default function HomePage() {
           ].map(({ value, label, suffix }, i) => (
             <ScrollReveal key={label} delay={i * 100}>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', color: 'var(--brand)', lineHeight: 1 }}>
-                {value > 0
+                {Number.isFinite(value)
                   ? <AnimatedCounter value={value} suffix={suffix} />
                   : <span style={{ color: 'var(--border-strong)' }}>—</span>
                 }

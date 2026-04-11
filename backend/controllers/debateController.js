@@ -206,7 +206,7 @@ const getCategories = async (req, res, next) => {
 // @access Public — returns top 6 trending debates
 const getTrending = async (req, res, next) => {
   try {
-    const debates = await Debate.find({ status: 'active' })
+    const debates = await Debate.find({ status: { $in: ['active', 'closed'] } })
       .sort({ viewCount: -1, totalVotes: -1 })
       .limit(6)
       .populate('creator', 'username avatar')

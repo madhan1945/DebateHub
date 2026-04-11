@@ -3,18 +3,9 @@ import { useState, useRef, useEffect } from 'react';
 import Navbar from '../../components/layout/Navbar';
 import Footer from '../../components/layout/Footer';
 import Button from '../../components/ui/Button';
+import { getApiBaseUrl } from '../../lib/env';
 
-const serverApiUrl =
-  process.env.INTERNAL_API_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  (process.env.NODE_ENV === 'production'
-    ? `http://127.0.0.1:${process.env.PORT || 10000}/api`
-    : 'http://localhost:5000/api');
-
-const supportApiUrl =
-  typeof window === 'undefined'
-    ? serverApiUrl
-    : (process.env.NEXT_PUBLIC_API_URL || '/api');
+const supportApiUrl = getApiBaseUrl();
 
 export default function HelpPage() {
   const [messages, setMessages] = useState([

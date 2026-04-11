@@ -5,6 +5,8 @@ import { useRouter } from '@/lib/navigation';
 import toast from 'react-hot-toast';
 import { useAuth } from '../../../lib/auth';
 import { authAPI } from '../../../lib/api';
+import { getGoogleClientId } from '../../../lib/env';
+import { renderGoogleButton } from '../../../lib/googleIdentity';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
 
@@ -25,21 +27,11 @@ export default function RegisterPage() {
   const [agreed, setAgreed]   = useState(false);
 
   useEffect(() => {
-    const clientId = process.env.GOOGLE_CLIENT_ID;
-    if (!clientId) return;
-    const script = document.createElement('script');
-    script.src = 'https://accounts.google.com/gsi/client';
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      window.google?.accounts.id.initialize({ client_id: clientId, callback: handleGoogleCallback });
-      window.google?.accounts.id.renderButton(
-        document.getElementById('google-register-btn'),
-        { theme: 'outline', size: 'large', width: '100%', text: 'signup_with' }
-      );
-    };
-    document.body.appendChild(script);
-    return () => document.body.removeChild(script);
+    renderGoogleButton({
+      elementId: 'google-register-btn',
+      text: 'signup_with',
+      callback: handleGoogleCallback,
+    }).catch((error) => console.warn(error.message));
   }, []);
 
   const handleGoogleCallback = async ({ credential }) => {
@@ -121,7 +113,7 @@ export default function RegisterPage() {
       {/* Google */}
       <div style={{ marginBottom: '1.5rem' }}>
         <div id="google-register-btn" style={{ minHeight: 44 }} />
-        {!process.env.GOOGLE_CLIENT_ID && (
+        {!getGoogleClientId() && (
           <button
             type="button"
             onClick={() => toast.error('Add GOOGLE_CLIENT_ID to .env.local')}

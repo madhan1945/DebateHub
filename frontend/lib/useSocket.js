@@ -1,23 +1,9 @@
 'use client';
 import { useEffect, useRef, useCallback } from 'react';
 import { io } from 'socket.io-client';
+import { getSocketBaseUrl } from './env';
 
 let socketInstance = null;
-
-function getSocketBaseUrl() {
-  if (typeof window === 'undefined') {
-    const serverApiUrl =
-      process.env.INTERNAL_API_URL ||
-      process.env.NEXT_PUBLIC_API_URL ||
-      (process.env.NODE_ENV === 'production'
-        ? `http://127.0.0.1:${process.env.PORT || 10000}/api`
-        : 'http://localhost:5000/api');
-
-    return serverApiUrl.replace(/\/api$/, '');
-  }
-
-  return (process.env.NEXT_PUBLIC_API_URL || '/api').replace(/\/api$/, '') || window.location.origin;
-}
 
 function getSocket() {
   if (typeof window === 'undefined') return null;

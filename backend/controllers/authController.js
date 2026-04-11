@@ -4,6 +4,10 @@ const { sendTokenResponse } = require('../config/jwt');
 
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
+function isMissingEnv(value) {
+  return !value || ['value', 'undefined', 'null'].includes(String(value).trim().toLowerCase());
+}
+
 // @route   POST /api/auth/register
 // @access  Public
 const register = async (req, res, next) => {
@@ -61,6 +65,13 @@ const login = async (req, res, next) => {
 // @access  Public
 const googleAuth = async (req, res, next) => {
   try {
+    if (isMissingEnv(process.env.GOOGLE_CLIENT_ID)) {
+      return res.status(500).json({
+        success: false,
+        message: 'Google OAuth is not configured on the server. Set GOOGLE_CLIENT_ID.',
+      });
+    }
+
     const { credential } = req.body;
 
     if (!credential) {
@@ -106,7 +117,10 @@ const googleAuth = async (req, res, next) => {
 
     sendTokenResponse(user, 200, res);
   } catch (error) {
-    next(error);
+    res.status(401).json({
+      success: false,
+      message: 'Google login failed. Make sure this domain is added to Google OAuth authorised JavaScript origins.',
+    });
   }
 };
 

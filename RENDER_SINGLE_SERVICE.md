@@ -13,7 +13,7 @@ This repo is configured to run as one Render web service.
 
 ```env
 NODE_ENV=production
-VITE_API_URL=/api
+NEXT_PUBLIC_API_URL=/api
 CLIENT_URL=https://your-service-name.onrender.com
 CLIENT_URLS=https://your-service-name.onrender.com
 MONGO_URI=your_mongodb_uri

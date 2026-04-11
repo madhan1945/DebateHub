@@ -94,8 +94,8 @@ NODE_ENV=development
 
 **frontend/.env.local**
 ```
-VITE_API_URL=http://localhost:5000/api
-VITE_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
+NEXT_PUBLIC_API_URL=/api
+GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 ```
 
 ---
@@ -139,7 +139,7 @@ VITE_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 **Frontend static build**
 1. Build the frontend with `npm run build`
 2. Serve `frontend/dist` from your static host or the unified Express server
-3. Add environment variables (`VITE_API_URL` pointing to Render URL)
+3. Add environment variables (`NEXT_PUBLIC_API_URL` pointing to Render URL)
 4. Deploy the generated static assets
 
 ---

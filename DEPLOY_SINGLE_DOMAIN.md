@@ -20,7 +20,7 @@ Create `frontend/.env.local`:
 ```env
 NEXT_PUBLIC_API_URL=/api
 INTERNAL_API_URL=http://127.0.0.1:5000/api
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
+GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 ```
 
 ## Backend Environment
