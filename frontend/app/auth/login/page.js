@@ -26,10 +26,21 @@ export default function LoginPage() {
       elementId: 'google-btn',
       text: 'signin_with',
       callback: handleGoogleCallback,
+      onError: (message) => {
+        setGoogleError(message);
+        toast.error(message);
+      },
     }).catch((error) => setGoogleError(error.message));
   }, []);
 
   const handleGoogleCallback = async ({ credential }) => {
+    if (!credential) {
+      const message = 'Google did not return a sign-in credential. Check this domain in Google Cloud OAuth settings.';
+      setGoogleError(message);
+      toast.error(message);
+      return;
+    }
+
     try {
       setLoading(true);
       const { data } = await authAPI.googleAuth(credential);
@@ -37,7 +48,9 @@ export default function LoginPage() {
       toast.success(`Welcome back, ${data.user.username}!`);
       router.push('/');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Google login failed.');
+      const message = err.response?.data?.message || 'Google login failed.';
+      setGoogleError(message);
+      toast.error(message);
     } finally {
       setLoading(false);
     }

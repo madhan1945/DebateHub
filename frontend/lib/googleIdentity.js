@@ -27,7 +27,7 @@ function loadGoogleScript() {
   return googleScriptPromise;
 }
 
-export async function renderGoogleButton({ elementId, text, callback }) {
+export async function renderGoogleButton({ elementId, text, callback, onError }) {
   const clientId = getGoogleClientId();
   if (!clientId) throw new Error('GOOGLE_CLIENT_ID is missing.');
 
@@ -39,7 +39,16 @@ export async function renderGoogleButton({ elementId, text, callback }) {
   const width = Math.max(240, Math.min(400, Math.floor(element.getBoundingClientRect().width || 320)));
   google.accounts.id.initialize({
     client_id: clientId,
-    callback,
+    callback: (response) => {
+      if (!response?.credential) {
+        onError?.('Google did not return a sign-in credential. Check the authorised JavaScript origin for this domain.');
+        return;
+      }
+      callback(response);
+    },
+    ux_mode: 'popup',
+    context: text === 'signup_with' ? 'signup' : 'signin',
+    auto_select: false,
     use_fedcm_for_prompt: false,
     itp_support: true,
   });

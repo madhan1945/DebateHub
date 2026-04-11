@@ -1,0 +1,1840 @@
+[{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0e9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.884Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0ea"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.884Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0f1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.910Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.910Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0f9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.980Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.980Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0fb"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.983Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.983Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7667b566e84e62cfbd0fc"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:35.983Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:35.983Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76685566e84e62cfbd112"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:45.922Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:45.922Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd12e"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.736Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd130"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.744Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.744Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd131"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.744Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.744Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd142"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.842Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd144"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.844Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.844Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76691566e84e62cfbd145"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T08:42:57.844Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:42:57.844Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d76699566e84e62cfbd15b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T08:43:05.629Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T08:43:05.629Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3635"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.154Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.154Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3634"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.153Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3641"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.179Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.179Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3645"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.203Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3648"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.205Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d774f3c1e5b9413cec3647"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:19.205Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:19.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7751ac1e5b9413cec365b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:44:58.268Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:44:58.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77520c1e5b9413cec3677"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:04.965Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:04.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77520c1e5b9413cec3679"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:04.968Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:04.968Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77520c1e5b9413cec367a"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:04.968Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:04.968Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77520c1e5b9413cec368b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:04.997Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:04.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77521c1e5b9413cec368f"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:05.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:05.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77521c1e5b9413cec3690"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:05.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:05.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77538c1e5b9413cec36aa"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:28.252Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:28.252Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36b6"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.322Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.322Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36b9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.325Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.325Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36b8"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.325Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.325Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36ca"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.360Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.360Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36ce"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.374Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.374Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7753ac1e5b9413cec36d0"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:30.375Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:30.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7754ac1e5b9413cec36e0"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T09:45:46.393Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T09:45:46.393Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c35107aff050d43b751"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:15:17.597Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:15:17.597Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c35107aff050d43b758"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:15:17.615Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:15:17.615Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c35107aff050d43b760"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:15:17.656Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:15:17.656Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c35107aff050d43b762"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:15:17.658Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:15:17.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c64107aff050d43b77d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T10:16:04.159Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:16:04.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c9d107aff050d43b7af"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:17:01.901Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:17:01.901Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c9d107aff050d43b7b1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:17:01.903Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:17:01.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c9d107aff050d43b7c1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:17:01.943Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:17:01.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77c9d107aff050d43b7c5"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T10:17:01.964Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:17:01.964Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d77ca6107aff050d43b7e3"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T10:17:10.789Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T10:17:10.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792ba107aff050d43b8b7"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:22.474Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:22.474Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792ba107aff050d43b8b9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:22.477Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:22.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792ba107aff050d43b8c9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:22.510Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:22.510Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792ba107aff050d43b8cd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:22.526Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:22.526Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792c0107aff050d43b8dd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "hi",
+  "type": "message",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:28.426Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:28.426Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792d1107aff050d43b8fd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:45.242Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:45.242Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c362107aff050d43b9d0"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:18:58.520Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:18:58.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c362107aff050d43b9d9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:18:58.534Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:18:58.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c362107aff050d43b9dd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:18:58.559Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:18:58.559Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c362107aff050d43b9df"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:18:58.560Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:18:58.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c366107aff050d43ba01"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:02.502Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:02.502Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c367107aff050d43ba03"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:03.690Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:03.690Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c367107aff050d43ba05"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:03.692Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:03.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c367107aff050d43ba15"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:03.731Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:03.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c367107aff050d43ba19"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:03.736Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:03.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c36a107aff050d43ba39"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T15:19:06.206Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:19:06.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c959fadd9d272106dd1d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:44:25.519Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:25.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c959fadd9d272106dd25"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:44:25.538Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:25.538Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c959fadd9d272106dd2c"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:44:25.583Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:25.583Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c959fadd9d272106dd30"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:44:25.588Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:25.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9aafadd9d272106dd57"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T15:45:46.984Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:45:46.984Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9d6fadd9d272106dd8f"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:30.488Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:30.488Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9d6fadd9d272106dd91"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:30.490Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:30.490Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9d6fadd9d272106dda1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:30.517Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:30.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9d6fadd9d272106dda5"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:30.534Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:30.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9e0fadd9d272106ddb5"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "Anyone online",
+  "type": "message",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:40.195Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:40.195Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9e5fadd9d272106ddb7"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "??",
+  "type": "message",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:45.191Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:45.191Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f1fadd9d272106ddbf"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:57.525Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:57.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f2fadd9d272106ddcb"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:58.872Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:58.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f2fadd9d272106ddcd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:58.873Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:58.873Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f2fadd9d272106dddd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:58.902Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:58.902Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f2fadd9d272106dde1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T15:46:58.914Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:46:58.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c9f7fadd9d272106de01"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T15:47:03.902Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:47:03.902Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6874ca1daef7f893e85"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:40:39.073Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:39.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6874ca1daef7f893e8c"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:40:39.099Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:39.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6874ca1daef7f893e94"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:40:39.151Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:39.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6874ca1daef7f893e98"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:40:39.159Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:39.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6ac4ca1daef7f893f2d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:41:16.945Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:16.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6ac4ca1daef7f893f31"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:41:16.993Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:16.993Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6ac4ca1daef7f893f33"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:41:16.995Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:16.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6ad4ca1daef7f893f39"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:41:17.008Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:17.008Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d6bb4ca1daef7f893f53"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ left",
+  "type": "leave",
+  "createdAt": {
+    "$date": "2026-04-09T16:41:31.670Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:31.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d92c4ca1daef7f894073"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:51:56.517Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:51:56.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d92c4ca1daef7f89407b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:51:56.529Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:51:56.529Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d92c4ca1daef7f894082"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:51:56.568Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:51:56.568Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d92c4ca1daef7f894084"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "BigJ joined",
+  "type": "join",
+  "createdAt": {
+    "$date": "2026-04-09T16:51:56.569Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:51:56.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7d9ba66c9bcb20cc7c015"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "message": "is anyone there?",
+  "type": "message",
+  "createdAt": {
+    "$date": "2026-04-09T16:54:18.631Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:54:18.631Z"
+  },
+  "__v": 0
+}]

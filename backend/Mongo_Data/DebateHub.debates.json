@@ -1,0 +1,914 @@
+[{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "title": "Should AI be regulated like nuclear technology?",
+  "description": "AI systems are advancing faster than our ability to govern them. Nuclear technology required international treaties, strict licensing, and oversight bodies. Should AI development face the same level of control — including mandatory safety testing, government approval before deployment, and international agreements to prevent an AI arms race?",
+  "category": "Technology",
+  "tags": [
+    "ai",
+    "regulation",
+    "policy",
+    "safety"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.703Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 184,
+  "viewCount": 739,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0d7"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.705Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.708Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd432"
+  },
+  "title": "Should social media companies be held liable for content posted by users?",
+  "description": "Section 230 in the US shields platforms from liability for user content. But with misinformation, hate speech, and radicalization rampant, should platforms be legally responsible for what they allow to spread — just like newspapers are responsible for what they publish?",
+  "category": "Technology",
+  "tags": [
+    "social-media",
+    "law",
+    "free-speech"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-11T15:17:39.731Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 153,
+  "viewCount": 383,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0dc"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.732Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.732Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-11T15:21:19.014Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd43d"
+  },
+  "title": "Is the metaverse the future of the internet or an expensive failure?",
+  "description": "Meta spent over $40 billion on metaverse development. Apple, Microsoft and others have invested heavily. Yet adoption remains low. Is the metaverse a genuine paradigm shift in how we interact digitally, or a solution looking for a problem?",
+  "category": "Technology",
+  "tags": [
+    "metaverse",
+    "vr",
+    "tech"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-10T15:17:39.742Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 99,
+  "viewCount": 434,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0df"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.742Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.742Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-10T15:20:48.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd448"
+  },
+  "title": "Should university education be free for all citizens?",
+  "description": "Countries like Germany and Norway offer free university education. Others argue this devalues degrees and burdens taxpayers. Should higher education be treated as a public good like schools, or should students bear the cost of their own investment?",
+  "category": "Education",
+  "tags": [
+    "university",
+    "free-education",
+    "policy"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-13T15:17:39.752Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 137,
+  "viewCount": 471,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0e2"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.752Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.752Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd453"
+  },
+  "title": "Should smartphones be completely banned in schools?",
+  "description": "France banned smartphones in schools in 2018. Studies show phones reduce concentration and increase anxiety. But they also enable learning, communication, and digital literacy. Should schools ban phones entirely or teach responsible use?",
+  "category": "Education",
+  "tags": [
+    "smartphones",
+    "schools",
+    "children"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-11T15:17:39.761Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 76,
+  "viewCount": 236,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0d7"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.761Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.761Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-11T15:21:19.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd45e"
+  },
+  "title": "Is homeschooling better than traditional schooling for children?",
+  "description": "Homeschooled children often outperform peers academically, but critics point to social development concerns. With personalized learning on the rise, is homeschooling a superior model or does it deprive children of essential social experiences?",
+  "category": "Education",
+  "tags": [
+    "homeschooling",
+    "education",
+    "parenting"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.770Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 58,
+  "viewCount": 547,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0dc"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.770Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.770Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd469"
+  },
+  "title": "Should all single-use plastics be banned globally by 2030?",
+  "description": "Over 8 million tons of plastic enter oceans every year. A global ban on single-use plastics could drastically reduce this. But developing nations rely on cheap plastic for food safety and healthcare. Is a blanket ban practical and fair?",
+  "category": "Environment",
+  "tags": [
+    "plastic",
+    "climate",
+    "ban",
+    "oceans"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-14T15:17:39.779Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 111,
+  "viewCount": 985,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0df"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.779Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.779Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.786Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "title": "Should nuclear energy be part of the green energy transition?",
+  "description": "Nuclear produces virtually zero carbon emissions and provides reliable baseload power. But Chernobyl, Fukushima, and waste storage remain serious concerns. Should environmentalists support nuclear as a bridge to a fully renewable future?",
+  "category": "Environment",
+  "tags": [
+    "nuclear",
+    "energy",
+    "climate",
+    "renewable"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.787Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 26,
+  "viewCount": 181,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0e2"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.787Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.788Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd47f"
+  },
+  "title": "Should the 4-day work week become the global standard?",
+  "description": "Iceland, Japan, and UK trials showed that a 4-day week maintained or improved productivity while dramatically boosting wellbeing. Is it time for governments to legislate a shorter work week, or should this remain a company-by-company decision?",
+  "category": "Business",
+  "tags": [
+    "work-week",
+    "productivity",
+    "wellbeing"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-11T15:17:39.796Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 143,
+  "viewCount": 93,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0d7"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.796Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.796Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-11T15:21:19.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd48a"
+  },
+  "title": "Is remote work better for productivity than in-office work?",
+  "description": "Post-pandemic data shows conflicting results. Some studies show 13% productivity gains working from home. Others show collaboration, creativity, and mentorship suffer. What does the full body of evidence say — and who gets to decide?",
+  "category": "Business",
+  "tags": [
+    "remote-work",
+    "productivity",
+    "office"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-10T15:17:39.803Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 115,
+  "viewCount": 119,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0dc"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.804Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.804Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-10T15:20:48.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd495"
+  },
+  "title": "Should billionaires exist in a fair society?",
+  "description": "The world's 10 richest people hold more wealth than the bottom 40% of humanity combined. Is extreme wealth accumulation a sign of innovation and success, or a symptom of systemic failure that should be addressed through progressive taxation?",
+  "category": "Business",
+  "tags": [
+    "wealth",
+    "inequality",
+    "taxation",
+    "economy"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-15T15:17:39.812Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 84,
+  "viewCount": 471,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0df"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.812Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.812Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4a0"
+  },
+  "title": "Should voting be mandatory in democratic countries?",
+  "description": "Australia has had compulsory voting since 1924 with over 90% turnout. Voluntary voting leads to low turnout and unrepresentative governments. But is forcing people to vote a violation of democratic freedom — including the freedom not to participate?",
+  "category": "Politics",
+  "tags": [
+    "voting",
+    "democracy",
+    "compulsory"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.820Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 153,
+  "viewCount": 301,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0e2"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.821Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.821Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "title": "Should the United Nations be given actual enforcement powers?",
+  "description": "The UN can pass resolutions but has no power to enforce them without member state cooperation. This leads to toothless responses to genocide, war crimes, and rogue states. Should the UN be reformed into a body with real enforcement authority?",
+  "category": "Politics",
+  "tags": [
+    "un",
+    "international-law",
+    "geopolitics"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-13T15:17:39.829Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 127,
+  "viewCount": 62,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0d7"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.829Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.830Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4b6"
+  },
+  "title": "Should junk food be taxed like cigarettes?",
+  "description": "Obesity costs the global economy trillions annually. Sugar taxes in Mexico and the UK have shown measurable reductions in consumption. Should governments go further and tax all ultra-processed foods heavily to fund public healthcare?",
+  "category": "Health",
+  "tags": [
+    "junk-food",
+    "tax",
+    "obesity",
+    "healthcare"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-11T15:17:39.837Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 115,
+  "viewCount": 310,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0dc"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.837Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.837Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-11T15:21:19.026Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4c1"
+  },
+  "title": "Should mental health days be legally recognised as sick days?",
+  "description": "Mental illness accounts for a huge portion of workplace absence yet employees often feel they cannot take time off without a \"physical\" reason. Should legislation require employers to treat mental health days exactly like physical illness days?",
+  "category": "Health",
+  "tags": [
+    "mental-health",
+    "workplace",
+    "law"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.845Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 61,
+  "viewCount": 216,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0df"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.845Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.845Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4cc"
+  },
+  "title": "Should the death penalty be abolished worldwide?",
+  "description": "Over 55 countries still practise capital punishment. Proponents argue it deters serious crime. Opponents cite wrongful convictions, racial bias, and the state's moral authority to take life. Is there any justification for capital punishment in 2025?",
+  "category": "Society",
+  "tags": [
+    "death-penalty",
+    "justice",
+    "human-rights"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-14T15:17:39.853Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 97,
+  "viewCount": 994,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0e2"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.853Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.853Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.859Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4d7"
+  },
+  "title": "Is cancel culture a threat to free speech?",
+  "description": "Public figures face severe consequences for past statements and actions through social media pressure. Some call this accountability. Others call it mob justice that chills free expression. Has cancel culture gone too far, or is it a necessary corrective?",
+  "category": "Society",
+  "tags": [
+    "cancel-culture",
+    "free-speech",
+    "accountability"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "bannerImage": "",
+  "status": "closed",
+  "endTime": {
+    "$date": "2026-04-11T15:17:39.860Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 104,
+  "viewCount": 679,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0d7"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": "tie",
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.861Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.861Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-11T15:21:19.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "title": "Should human genetic engineering be permitted to eliminate hereditary diseases?",
+  "description": "CRISPR technology can now edit embryo DNA to remove genes linked to diseases like cystic fibrosis, Huntington's, and sickle cell. Should this be allowed under medical supervision, or does it open the door to designer babies and eugenics?",
+  "category": "Science",
+  "tags": [
+    "genetics",
+    "crispr",
+    "ethics",
+    "medicine"
+  ],
+  "creator": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-13T15:17:39.869Z"
+  },
+  "supportCount": 3,
+  "opposeCount": 2,
+  "totalArguments": 5,
+  "totalVotes": 105,
+  "viewCount": 954,
+  "participants": [
+    {
+      "$oid": "69d393aa3dcdd0168d93d0dc"
+    },
+    {
+      "$oid": "69d344ec9239821ebc0e4f86"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.870Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.870Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:43.029Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "title": "Should historical statues of controversial figures be removed from public spaces?",
+  "description": "Statues of slave traders, colonialists, and war criminals have been torn down or relocated worldwide. Critics say this erases history. Supporters say public celebration of these figures causes ongoing harm. Where should society draw the line?",
+  "category": "Culture",
+  "tags": [
+    "history",
+    "statues",
+    "culture",
+    "race"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-12T15:17:39.877Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 2,
+  "totalArguments": 4,
+  "totalVotes": 148,
+  "viewCount": 1061,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0df"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.877Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.877Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "title": "Should transgender women be allowed to compete in women's sports?",
+  "description": "This is one of the most contested questions in modern sport. Arguments around fairness, inclusion, physiology, and human rights collide directly. World Athletics and swimming bodies have taken different positions. What should the universal policy be?",
+  "category": "Sports",
+  "tags": [
+    "transgender",
+    "sport",
+    "inclusion",
+    "fairness"
+  ],
+  "creator": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "bannerImage": "",
+  "status": "active",
+  "endTime": {
+    "$date": "2026-04-14T15:17:39.885Z"
+  },
+  "supportCount": 2,
+  "opposeCount": 3,
+  "totalArguments": 6,
+  "totalVotes": 154,
+  "viewCount": 3119,
+  "participants": [
+    {
+      "$oid": "69d393ab3dcdd0168d93d0e2"
+    },
+    {
+      "$oid": "69d344ec9239821ebc0e4f86"
+    }
+  ],
+  "isFeatured": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "winner": null,
+  "startTime": {
+    "$date": "2026-04-08T15:17:39.885Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.885Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T17:09:58.244Z"
+  },
+  "__v": 0
+}]

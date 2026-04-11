@@ -1,0 +1,2658 @@
+[{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd429"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 13,
+  "downvotes": 3,
+  "score": 24,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.713Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd42b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 37,
+  "downvotes": 2,
+  "score": 35,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.715Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd42d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 11,
+  "downvotes": 6,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.717Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd42f"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd427"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 24,
+  "downvotes": 1,
+  "score": 21,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.719Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd434"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd432"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 41,
+  "downvotes": 9,
+  "score": 12,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.734Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.734Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd436"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd432"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 13,
+  "downvotes": 6,
+  "score": 25,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.735Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd438"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd432"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 33,
+  "downvotes": 6,
+  "score": 24,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.737Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.737Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd43a"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd432"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 27,
+  "downvotes": 1,
+  "score": 19,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.739Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd43f"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd43d"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 34,
+  "downvotes": 2,
+  "score": 26,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.745Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.745Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd441"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd43d"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 43,
+  "downvotes": 4,
+  "score": 32,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.746Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd443"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd43d"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 21,
+  "downvotes": 2,
+  "score": 15,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.748Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.748Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd445"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd43d"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 8,
+  "downvotes": 1,
+  "score": 13,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.749Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd44a"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd448"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 40,
+  "downvotes": 5,
+  "score": 7,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.754Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.754Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd44c"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd448"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 5,
+  "downvotes": 3,
+  "score": 32,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.755Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd44e"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd448"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 17,
+  "downvotes": 2,
+  "score": 11,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.757Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd450"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd448"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 37,
+  "downvotes": 9,
+  "score": 8,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.758Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd455"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd453"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 37,
+  "downvotes": 3,
+  "score": 16,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.763Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.763Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd457"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd453"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 26,
+  "downvotes": 7,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.764Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.764Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd459"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd453"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 14,
+  "downvotes": 0,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.766Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.766Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd45b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd453"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 17,
+  "downvotes": 0,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.767Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd460"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd45e"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 20,
+  "downvotes": 4,
+  "score": 22,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.772Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd462"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd45e"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 16,
+  "downvotes": 0,
+  "score": 11,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.774Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd464"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd45e"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 35,
+  "downvotes": 9,
+  "score": 16,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.775Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd466"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd45e"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 10,
+  "downvotes": 9,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.776Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd46b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd469"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 14,
+  "downvotes": 4,
+  "score": 33,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.781Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd46d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd469"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 24,
+  "downvotes": 4,
+  "score": 6,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.782Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd46f"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd469"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 26,
+  "downvotes": 8,
+  "score": 12,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.783Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.783Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd471"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd469"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 27,
+  "downvotes": 8,
+  "score": 15,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.784Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.784Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd476"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 5,
+  "downvotes": 6,
+  "score": 17,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.789Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd478"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 22,
+  "downvotes": 0,
+  "score": 26,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.790Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd47a"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 33,
+  "downvotes": 0,
+  "score": 8,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.792Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd47c"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd474"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 38,
+  "downvotes": 5,
+  "score": 5,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.793Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd481"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd47f"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 43,
+  "downvotes": 0,
+  "score": 25,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.797Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.797Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd483"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd47f"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 7,
+  "downvotes": 8,
+  "score": 8,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.799Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.799Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd485"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd47f"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 24,
+  "downvotes": 7,
+  "score": 17,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.800Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd487"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd47f"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 31,
+  "downvotes": 5,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.801Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd48c"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd48a"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 21,
+  "downvotes": 2,
+  "score": 13,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.805Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd48e"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd48a"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 9,
+  "downvotes": 8,
+  "score": 10,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.807Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd490"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd48a"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 13,
+  "downvotes": 9,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.808Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd492"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd48a"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 19,
+  "downvotes": 4,
+  "score": 26,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.809Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.809Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd497"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd495"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 9,
+  "downvotes": 3,
+  "score": 33,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.814Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd499"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd495"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 19,
+  "downvotes": 9,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.816Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.816Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd49b"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd495"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 5,
+  "downvotes": 9,
+  "score": 33,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.817Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd49d"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd495"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 41,
+  "downvotes": 7,
+  "score": 20,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.818Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4a2"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4a0"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 25,
+  "downvotes": 6,
+  "score": 26,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.822Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.822Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4a4"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4a0"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 30,
+  "downvotes": 7,
+  "score": 33,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.824Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.824Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4a6"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4a0"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 18,
+  "downvotes": 8,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.825Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4a8"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4a0"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 31,
+  "downvotes": 5,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.827Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ad"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 22,
+  "downvotes": 5,
+  "score": 18,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.831Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4af"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 19,
+  "downvotes": 9,
+  "score": 22,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.832Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.832Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4b1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 22,
+  "downvotes": 8,
+  "score": 36,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.833Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.833Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4b3"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ab"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 9,
+  "downvotes": 6,
+  "score": 5,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.834Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.834Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4b8"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4b6"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 11,
+  "downvotes": 6,
+  "score": 27,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.838Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.838Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ba"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4b6"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 32,
+  "downvotes": 2,
+  "score": 30,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.840Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4bc"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4b6"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 22,
+  "downvotes": 8,
+  "score": 12,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.841Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4be"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4b6"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 30,
+  "downvotes": 1,
+  "score": 16,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.842Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4c3"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4c1"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 31,
+  "downvotes": 5,
+  "score": 33,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.846Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4c5"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4c1"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 28,
+  "downvotes": 3,
+  "score": 21,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.847Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.847Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4c7"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4c1"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 35,
+  "downvotes": 5,
+  "score": 15,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.849Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4c9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4c1"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 24,
+  "downvotes": 8,
+  "score": 38,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.850Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.850Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ce"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4cc"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 24,
+  "downvotes": 9,
+  "score": 35,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.855Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.855Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4d0"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4cc"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 14,
+  "downvotes": 3,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.856Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4d2"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4cc"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 41,
+  "downvotes": 4,
+  "score": 20,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.857Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.857Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4d4"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4cc"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 43,
+  "downvotes": 8,
+  "score": 17,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.858Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.858Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4d9"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4d7"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 29,
+  "downvotes": 6,
+  "score": 30,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.863Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.863Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4db"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4d7"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 21,
+  "downvotes": 8,
+  "score": 14,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.864Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4dd"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4d7"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 8,
+  "downvotes": 1,
+  "score": 32,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.865Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4df"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4d7"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 11,
+  "downvotes": 3,
+  "score": 34,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.867Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.867Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4e4"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 9,
+  "downvotes": 7,
+  "score": 5,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.871Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4e6"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 38,
+  "downvotes": 4,
+  "score": 15,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.872Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4e8"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 8,
+  "downvotes": 2,
+  "score": 29,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.873Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.873Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ea"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 43,
+  "downvotes": 0,
+  "score": 17,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.874Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.874Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4ef"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 31,
+  "downvotes": 7,
+  "score": 9,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.879Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4f1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 43,
+  "downvotes": 5,
+  "score": 24,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.880Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4f3"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 20,
+  "downvotes": 8,
+  "score": 25,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.881Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4f5"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4ed"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 32,
+  "downvotes": 0,
+  "score": 23,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.882Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-08T15:17:39.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4fa"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "side": "support",
+  "content": "The evidence strongly supports this position. Multiple peer-reviewed studies have demonstrated measurable benefits, and countries that have adopted similar policies report significantly better outcomes across all key metrics.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 13,
+  "downvotes": 6,
+  "score": 7,
+  "wilsonScore": 0.4601001017506463,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.887Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:08.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4fc"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "side": "support",
+  "content": "From an economic standpoint, the long-term cost savings far outweigh the initial investment. Independent analysis shows a net positive return within 5 years, making this not just the ethical choice but the fiscally responsible one.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 25,
+  "downvotes": 9,
+  "score": 16,
+  "wilsonScore": 0.5688253783710155,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.888Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:14.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd4fe"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "side": "oppose",
+  "content": "This fundamentally misunderstands the complexity of the issue. The proposed solution treats a multifaceted problem with a blunt instrument, and history shows that such heavy-handed interventions consistently produce unintended consequences worse than the original problem.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 27,
+  "downvotes": 5,
+  "score": 22,
+  "wilsonScore": 0.6824550744643347,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.889Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T17:09:58.242Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d671930c81cc851c7bd500"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "side": "oppose",
+  "content": "The data does not support this conclusion. When you control for confounding variables, the correlation disappears entirely. We would be making major policy decisions based on a statistical artefact, not a real causal relationship.",
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 27,
+  "downvotes": 5,
+  "score": 22,
+  "wilsonScore": 0.6824550744643347,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "referenceLinks": [],
+  "createdAt": {
+    "$date": "2026-04-08T15:17:39.891Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:09.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d765fb566e84e62cfbd06a"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "side": "oppose",
+  "content": "I don't think so",
+  "referenceLinks": [],
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 0,
+  "downvotes": 0,
+  "score": 0,
+  "wilsonScore": 0,
+  "replyCount": 1,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "createdAt": {
+    "$date": "2026-04-09T08:40:27.656Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:53.276Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d792cf107aff050d43b8e1"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4e2"
+  },
+  "author": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "side": "support",
+  "content": "hi................",
+  "referenceLinks": [],
+  "images": [],
+  "parentArgument": null,
+  "depth": 0,
+  "upvotes": 0,
+  "downvotes": 0,
+  "score": 0,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "createdAt": {
+    "$date": "2026-04-09T11:51:43.010Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T11:51:43.010Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7c975fadd9d272106dd43"
+  },
+  "debate": {
+    "$oid": "69d671930c81cc851c7bd4f8"
+  },
+  "author": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "side": "oppose",
+  "content": "I mean I don't know I'm not sure",
+  "referenceLinks": [],
+  "images": [],
+  "parentArgument": {
+    "$oid": "69d765fb566e84e62cfbd06a"
+  },
+  "depth": 1,
+  "upvotes": 0,
+  "downvotes": 0,
+  "score": 0,
+  "wilsonScore": 0,
+  "replyCount": 0,
+  "isDeleted": false,
+  "isFlagged": false,
+  "flagReason": "",
+  "createdAt": {
+    "$date": "2026-04-09T15:44:53.270Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T15:44:53.270Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "69d7dd665431d96e1afc2721"
+  },
+  "argument": {
+    "$oid": "69d671930c81cc851c7bd4fe"
+  },
+  "user": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "voteType": "upvote",
+  "createdAt": {
+    "$date": "2026-04-09T17:09:58.232Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T17:09:58.232Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "69d344ec9239821ebc0e4f86"
+  },
+  "username": "BigJ",
+  "email": "jmadhankumaar2005@gmail.com",
+  "password": "$2a$12$B7x6iRkRFH2hvIHvQgDnUeMFp4lx5UL/ctrEPgfOW2Dya0s2khWD.",
+  "avatar": "https://ui-avatars.com/api/?name=BigJ&background=random&length=1&color=fff&bold=true",
+  "bio": "I am what I am",
+  "role": "user",
+  "reputationPoints": 0,
+  "debatesParticipated": 2,
+  "totalVotesReceived": 0,
+  "argumentsPosted": 3,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [
+    "Technology"
+  ],
+  "bookmarkedDebates": [
+    {
+      "$oid": "69d671930c81cc851c7bd427"
+    },
+    {
+      "$oid": "69d671930c81cc851c7bd4f8"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-06T05:30:20.742Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-10T11:13:20.338Z"
+  },
+  "__v": 9,
+  "googleId": "114839811166961214374",
+  "philosophicalStance": "Stoic",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/berserk_jinx",
+    "discord": "https://discord.com/users/madhan1945",
+    "github": "https://github.com/madhan1945",
+    "twitter": "",
+    "website": ""
+  },
+  "settings": {
+    "autoDestruct": false,
+    "hapticFeedback": true,
+    "hardcoreToxicity": false,
+    "incognitoVote": false
+  }
+},
+{
+  "_id": {
+    "$oid": "69d3911e236ccea0b299b677"
+  },
+  "username": "debatehub_seed",
+  "email": "seed@debatehub.com",
+  "password": "$2a$12$Kqj3WjTbheMFDNqz1C2Sv.VLQir6UDMaBtGE5rmJGfE3Ob4HfsX4m",
+  "avatar": "",
+  "bio": "",
+  "role": "user",
+  "reputationPoints": 0,
+  "debatesParticipated": 0,
+  "totalVotesReceived": 0,
+  "argumentsPosted": 0,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [],
+  "bookmarkedDebates": [],
+  "createdAt": {
+    "$date": "2026-04-06T10:55:26.757Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-06T10:55:26.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d393aa3dcdd0168d93d0d7"
+  },
+  "username": "alex_debates",
+  "email": "alex@seed.com",
+  "password": "$2a$12$k1mhupu/UNrklOjm5T1UOOxNhoblXSFXxefhgekeiRvXgdFYA/D5m",
+  "avatar": "",
+  "bio": "",
+  "role": "user",
+  "reputationPoints": 256,
+  "debatesParticipated": 6,
+  "totalVotesReceived": 168,
+  "argumentsPosted": 13,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [],
+  "bookmarkedDebates": [],
+  "createdAt": {
+    "$date": "2026-04-06T11:06:18.514Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:51.332Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d393aa3dcdd0168d93d0dc"
+  },
+  "username": "priya_argues",
+  "email": "priya@seed.com",
+  "password": "$2a$12$Sec.jE0C0w4AASnBHhrs2OX1eESr2bHT/2ZWMWngmDtoX89xHJ9jO",
+  "avatar": "",
+  "bio": "",
+  "role": "user",
+  "reputationPoints": 118,
+  "debatesParticipated": 8,
+  "totalVotesReceived": 113,
+  "argumentsPosted": 15,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [],
+  "bookmarkedDebates": [],
+  "createdAt": {
+    "$date": "2026-04-06T11:06:18.765Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:41:13.436Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d393ab3dcdd0168d93d0df"
+  },
+  "username": "marcus_thinks",
+  "email": "marcus@seed.com",
+  "password": "$2a$12$4NB9NXcJHkRf4FwhH1YaLe47.AWuWd6cZkZWAR/TwcntRTZOwn0Lm",
+  "avatar": "",
+  "bio": "",
+  "role": "user",
+  "reputationPoints": 373,
+  "debatesParticipated": 10,
+  "totalVotesReceived": 101,
+  "argumentsPosted": 5,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [],
+  "bookmarkedDebates": [],
+  "createdAt": {
+    "$date": "2026-04-06T11:06:19.006Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T17:09:58.235Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d393ab3dcdd0168d93d0e2"
+  },
+  "username": "sara_logic",
+  "email": "sara@seed.com",
+  "password": "$2a$12$qVNYE6eD6ZlneVRUPZ8DReOHehi/wyOnPVm6e2lpf6QnnFclG6F7q",
+  "avatar": "",
+  "bio": "",
+  "role": "user",
+  "reputationPoints": 370,
+  "debatesParticipated": 7,
+  "totalVotesReceived": 128,
+  "argumentsPosted": 24,
+  "debateWins": 0,
+  "isBanned": false,
+  "followedCategories": [],
+  "bookmarkedDebates": [],
+  "createdAt": {
+    "$date": "2026-04-06T11:06:19.246Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-09T16:40:44.440Z"
+  },
+  "__v": 0
+}]
