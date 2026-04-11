@@ -22,6 +22,8 @@ export default function LoginPage() {
 
   // Load Google Identity Services
   useEffect(() => {
+    if (!getGoogleClientId()) return;
+
     renderGoogleButton({
       elementId: 'google-btn',
       text: 'signin_with',

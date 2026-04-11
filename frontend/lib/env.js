@@ -2,7 +2,8 @@ const PLACEHOLDER_VALUES = new Set(['', 'value', 'your-value', 'undefined', 'nul
 
 function cleanEnvValue(value) {
   const normalized = String(value || '').trim();
-  return PLACEHOLDER_VALUES.has(normalized.toLowerCase()) ? '' : normalized;
+  const unquoted = normalized.replace(/^['\"]|['\"]$/g, '').trim();
+  return PLACEHOLDER_VALUES.has(unquoted.toLowerCase()) ? '' : unquoted;
 }
 
 function isLocalhostUrl(value) {
@@ -37,5 +38,9 @@ export function getSocketBaseUrl() {
 }
 
 export function getGoogleClientId() {
-  return cleanEnvValue(process.env.GOOGLE_CLIENT_ID);
+  return cleanEnvValue(
+    process.env.GOOGLE_CLIENT_ID ||
+      process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+      process.env.VITE_GOOGLE_CLIENT_ID
+  );
 }

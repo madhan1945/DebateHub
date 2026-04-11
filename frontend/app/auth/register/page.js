@@ -28,6 +28,8 @@ export default function RegisterPage() {
   const [googleError, setGoogleError] = useState('');
 
   useEffect(() => {
+    if (!getGoogleClientId()) return;
+
     renderGoogleButton({
       elementId: 'google-register-btn',
       text: 'signup_with',

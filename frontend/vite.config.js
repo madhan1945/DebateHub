@@ -21,10 +21,15 @@ function loadJsAsJsx() {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
+  const googleClientId =
+    env.GOOGLE_CLIENT_ID || env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || env.VITE_GOOGLE_CLIENT_ID || '';
+
   const frontendEnv = {
     INTERNAL_API_URL: env.INTERNAL_API_URL || '',
     NEXT_PUBLIC_API_URL: env.NEXT_PUBLIC_API_URL || '/api',
-    GOOGLE_CLIENT_ID: env.GOOGLE_CLIENT_ID || '',
+    GOOGLE_CLIENT_ID: googleClientId,
+    NEXT_PUBLIC_GOOGLE_CLIENT_ID: googleClientId,
+    VITE_GOOGLE_CLIENT_ID: googleClientId,
     NODE_ENV: mode === 'production' ? 'production' : 'development',
     PORT: env.PORT || '',
   };
